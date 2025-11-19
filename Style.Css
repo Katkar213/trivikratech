@@ -1188,7 +1188,7 @@ textarea:focus {
 }
 
 p {
-  font-weight: 220 !important;
+  font-weight: 300 !important;
 
 }
 
@@ -1892,6 +1892,7 @@ a {
   .subtitle {
     font-size: 20px !important;
     text-align: left !important;
+    font-weight: 300  !important;
   }
 
   .direction-reverse {
