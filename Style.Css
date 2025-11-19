@@ -1712,6 +1712,15 @@ a {
 
 @media screen and (min-width: 358px) and (max-width: 766px) {
 
+  .whats-app-icon-fix
+{
+  position: fixed;
+  bottom: 20px;
+  right: 20px !important;
+  z-index: 3000;
+
+}
+
 
   .process div p{
     font-size: 14px;
