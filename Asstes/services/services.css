@@ -1,0 +1,129 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fff;
+  color: #0f172a;
+}
+
+.services-section {
+  background: #fff;
+}
+
+.service-card {
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 14px;
+  padding: 18px 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.04);
+}
+
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.service-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.arrow-btn a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0d128f;
+  color: #fff;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.arrow-btn a:hover {
+  background: #0d128f;
+}
+
+.main-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.main-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main-icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.main-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.main-icon-text {
+  font-size: 22px;       /* adjust text size */
+  font-weight: 600;
+  color: #0f172a;        /* dark gray/black */
+}
+
+
+.dot {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Increase font size for list items on the right side */
+.services-section ul li {
+  font-size: 20px; /* ← increase or decrease as needed */
+  font-weight: 500;
+  color: #0f172a;
+}
+
+
+/* Buttons */
+.btn-primary-custom {
+  background: #213C72;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 10px 24px;
+  border: none;
+}
+
+.btn-primary-custom:hover {
+  background: #090b2b;
+  color: white;
+}
+
+.btn-outline-custom {
+  border: 1.5px solid  #213C72;;
+  color: #0d128f;
+  font-weight: 500;
+  border-radius: 10px;
+  padding: 10px 24px;
+}
+
+.btn-outline-custom:hover {
+  background: #213C72;;
+  color: #fff;
+}

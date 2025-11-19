@@ -1,0 +1,585 @@
+body {
+  font-family: "Poppins", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: #fff;
+  color: #0b0b0b;
+}
+
+
+/* TOOL We Learn */
+
+.tools-section {
+  padding: 4.5rem 0;
+}
+
+.accordion-button {
+  width: 100%;
+
+}
+
+.accordion-button.module-btn {
+  text-align: left;
+
+}
+
+.section-title {
+  font-weight: 800;
+  font-size: clamp(1.75rem, 2.8vw, 3rem);
+  margin-bottom: 2rem;
+  letter-spacing: -0.02em;
+}
+
+/* Generic tool card */
+.tool-card {
+  background: #F3F3F9;
+  border-radius: 16px;
+  padding: var(--card-padding);
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  min-height: 110px;
+  /* ensures consistent pill height */
+  box-shadow: var(--soft-shadow);
+  border: 1px solid rgba(110, 110, 110, 0.03);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(15, 15, 15, 0.09);
+}
+
+/* icon box */
+.icon-box {
+  margin-left: 16px;
+  width: var(--icon-box-size);
+  height: var(--icon-box-size);
+  min-width: var(--icon-box-size);
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  box-shadow: 0 6px 14px rgba(15, 15, 15, 0.06), inset 0 1px 0 rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(15, 15, 15, 0.04);
+  flex-shrink: 0;
+}
+
+.icon-box img {
+  width: 60px;
+  height: var(--icon-size);
+  object-fit: contain;
+  display: block;
+}
+
+/* Title styles */
+.tool-title-left {
+  font-weight: 400;
+  font-size: 24px;
+  margin: 0;
+  color: #0b0b0b;
+  /* left-aligned text for top row */
+  text-align: left;
+}
+
+/* Centered title for bottom row; allows multi-line & stays centered */
+.tool-card--center {
+  justify-content: center;
+  /* centers content horizontally */
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.tool-title-center {
+  font-weight: 400;
+  font-size: 32px;
+  margin: 0;
+  color: #0b0b0b;
+  line-height: 1.05;
+}
+
+/* spacing between icon and centered text: icon first then text centered */
+.tool-card--center .icon-box {
+  margin-right: 0.5rem;
+}
+
+/* Make sure on small screens cards can wrap nicely */
+@media (max-width: 991.98px) {
+  .tool-card {
+    min-height: 96px;
+  }
+
+  .tool-title-left {
+    font-size: 1.05rem;
+  }
+
+  .tool-title-center {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .tool-card {
+    padding: 0.9rem;
+    gap: 0.75rem;
+    min-height: auto;
+  }
+
+  /* For very small screens ensure centered cards remain readable */
+  .tool-card--center {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .tool-title-center {
+    text-align: left;
+    font-size: 1.05rem;
+  }
+}
+
+
+/* Who choose this Program */
+section.program-section {
+  padding: 5rem 0;
+}
+
+.program-section .section-title {
+  font-weight: 800;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 1rem;
+}
+
+.program-section .section-desc {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* LEFT SIDE BOXES */
+.program-section .left-box {
+  background: #f8f8fb;
+  border-radius: 12px;
+  padding: 1.5rem 1.25rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: #111;
+  margin-bottom: 1rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    0 3px 8px rgba(15, 15, 15, 0.03);
+  transition: all 0.25s ease;
+  max-width: 100%;
+  /* 👈 makes left column slightly narrower */
+}
+
+.program-section .left-box:hover {
+  background: #f1f3f8;
+  transform: translateY(-2px);
+}
+
+/* RIGHT SIDE IMAGE */
+.program-section img.side-image {
+  border-radius: 16px;
+      width: 100vw;
+  /* 👈 fixed width */
+  height: 400px;
+  /* 👈 fixed height */
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  display: block;
+  margin: 0 auto;
+}
+
+
+.program-section .col-lg-4 {
+  flex: 0 0 35%;
+  /* 👈 right image side gets more balance */
+  max-width: 100%;
+  /* background-color: #f8f8fb; */
+  /* padding: 10px; */
+  border-radius: 20px;
+
+}
+
+
+
+/* Adjust grid proportions */
+@media (min-width: 992px) {
+  .program-section .col-lg-8 {
+    flex: 0 0 60%;
+    /* 👈 make left section a bit smaller */
+    max-width: 60%;
+  }
+
+  .program-section .col-lg-4 {
+    flex: 0 0 35%;
+    /* 👈 right image side gets more balance */
+    max-width: 35%;
+    background-color: #f8f8fb;
+    padding: 10px;
+    border-radius: 20px;
+
+  }
+}
+
+/* Responsive stacking for mobile */
+@media (max-width: 992px) {
+  body {
+    text-align: left !important;
+  }
+
+  .program-section .col-lg-8 {
+    order: 2;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .program-section .col-lg-4 {
+    order: 1;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .program-section img.side-image {
+    width: 320px;
+    
+    max-width: 400px;
+  }
+}
+
+
+
+
+/* Syllabus */
+
+/* Section title */
+/* Section title */
+.curriculum-section .title {
+  font-weight: 800;
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+}
+
+/* Accordion item (styled like pill cards) */
+.accordion-item.module-card {
+  background: white;
+  border-radius: 8px;
+  padding: 0;
+  /* accordion-button provides padding */
+  box-shadow: var(--inset-shadow), 0 2px 8px rgba(15, 15, 15, 0.03);
+  border: 1.5px solid rgb(231 231 231);
+}
+
+/* Use Bootstrap's accordion-button but style it */
+.accordion-button.module-btn {
+  background: #F3F3F9;
+  border-radius: var(--pill-radius);
+  padding: 1rem 1.25rem;
+  font-weight: 400;
+  font-size: clamp(1.05rem, 1.4vw, 1.25rem);
+  color: #0b0b0b;
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+}
+
+.accordion-button.module-btn:not(.collapsed) {
+  /* active/open state */
+  box-shadow: 0 10px 28px rgba(15, 15, 15, 0.06);
+  border: 1px solid rgba(15, 15, 15, 0.06);
+}
+
+/* Remove default focus outline but keep accessible focus ring */
+.accordion-button:focus {
+  box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.08);
+  outline: none;
+}
+
+/* Module content styles */
+.module-content {
+  padding: 0.75rem 1.5rem 1rem 1.5rem;
+  /* inside accordion body */
+  background: transparent;
+}
+
+.module-points {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #4b5563;
+  line-height: 1.9;
+  font-size: 1rem;
+}
+
+.module-points li {
+  margin-bottom: 0.4rem;
+}
+
+/* Right card */
+.right-card {
+  background: transparent;
+  border: none;
+  padding: 0;
+}
+
+.right-image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: var(--soft-shadow);
+  display: block;
+}
+
+/* Description text */
+.right-desc {
+  color: #6b6f76;
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+/* CTA button */
+.btn-download {
+  background: #213C72;
+  color: #fff;
+  padding: 0.85rem 1.4rem;
+  border-radius: 8px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 500;
+  box-shadow: 0 6px 18px rgba(15, 15, 15, 0.06);
+  transition: transform .14s ease, box-shadow .14s ease;
+}
+
+.btn-download:hover {
+  transform: translateY(-4px);
+  color: white;
+  box-shadow: 0 18px 40px rgba(15, 15, 15, 0.09);
+}
+
+.modules-total {
+  font-size: 1.05rem;
+  color: #111;
+}
+
+.syllbus-bar {
+  margin-bottom: 0px;
+}
+
+
+/* Responsive tweaks */
+@media (max-width: 992px) {
+  body {
+    text-align: left !important;
+  }
+
+  .curriculum-section .right-image {
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .module-points {
+    font-size: 0.98rem;
+    padding-left: 1rem;
+  }
+
+  .btn-download {
+    padding: 0.7rem 1.15rem;
+    font-size: .95rem;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    text-align: left !important;
+  }
+
+  .module-points {
+    font-size: 0.95rem;
+  }
+
+  .btn-download {
+    padding: 0.6rem 1rem;
+    font-size: .92rem;
+  }
+}
+
+
+/* WHat U Learn */
+section {
+  background-color: #fff;
+}
+
+.section-title {
+  text-align: center;
+  font-weight: 800;
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  margin-bottom: 2.5rem;
+  color: #0b0b0b;
+  letter-spacing: -0.02em;
+}
+
+/* ---------- Grid Cards ---------- */
+.row.g-3 {
+  row-gap: 1.5rem;
+}
+
+/* Box container */
+.bg-light.border.rounded {
+  background: #f8f8fb !important;
+  border: 1px solid rgba(0, 0, 0, 0.05) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 14px rgba(15, 15, 15, 0.05), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  padding: 2rem 1.5rem !important;
+  transition: all 0.25s ease;
+}
+
+/* Hover animation */
+.bg-light.border.rounded:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(15, 15, 15, 0.08);
+  background-color: #f3f4f8 !important;
+}
+
+/* Headings inside box */
+.bg-light.border.rounded h5 {
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  color: #0b0b0b;
+}
+
+/* Paragraph inside box */
+.bg-light.border.rounded p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ---------- Responsive tweaks ---------- */
+@media (max-width: 992px) {
+  body {
+    text-align: left !important;
+  }
+
+
+  .bg-light.border.rounded {
+    padding: 1.5rem 1rem !important;
+  }
+
+  .bg-light.border.rounded h5 {
+    font-size: 1.1rem;
+  }
+
+  .bg-light.border.rounded p {
+    font-size: 0.9rem;
+  }
+
+  .program-section .left-box {
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 1.75rem;
+  }
+
+  .program-section .section-desc {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1rem;
+    color: #444;
+    line-height: 1.6;
+  }
+
+
+}
+
+.curriculum-section .right-image {
+  margin-top: 20px;
+}
+
+
+
+@media screen and (min-width: 370px) and (max-width: 766px) {
+
+
+
+  .hero-section-btn {
+    justify-content: left !important;
+
+  }
+
+  .btn-download {
+    width: 100%;
+  }
+
+  .right-card {
+    margin-top: 15px;
+    height: auto !important;
+  }
+
+  body {
+    text-align: left;
+
+  }
+
+  .program-section .section-desc {
+    text-align: left;
+  }
+
+}
+
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+
+  body {
+    text-align: left;
+
+  }
+
+
+
+  .tool-title-left {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 0;
+    color: #0b0b0b;
+    text-align: left;
+}
+
+
+
+.program-section .left-box {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+  .bg-light.border.rounded {
+
+    height: 140px !important;
+  }
+
+  .program-section img.side-image {
+    width: 100%;
+    max-height: 300px;
+    max-width: 100%;
+  }
+
+  section,
+  .py-5 {
+    padding-top: 32px !important;
+    padding-bottom: 16px !important;
+  }
+
+  .icon-box img,
+  .last-process img {
+    height: 62px !important;
+
+  }
+}

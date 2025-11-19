@@ -1,0 +1,630 @@
+/* =========================
+   ✅ DELIVERABLES SECTION CSS (UNIFORM ICONS)
+   ========================= */
+
+img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    display: block;
+}
+
+
+.icon-box img {
+  height: 120px !important;
+  width: 120px !important;
+}
+
+
+/* Main deliverables box */
+
+.custom-box {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 20px;
+    height: 170px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+
+
+
+.custom-box-2 {
+  height: 80px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+  margin-bottom: 24px;
+}
+
+/* Hover lift animation */
+.custom-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* ✅ Circle behind icons — fixed 52px */
+.background-circle {
+  background-color: #213c7233;
+  /* or your desired bg color */
+  border-radius: 50%;
+  height: 52px;
+  width: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px auto;
+  box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* ✅ Icon inside circle — fixed 42px */
+.background-circle img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Text under each icon */
+.custom-box p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 8px;
+  color: #2c2c2c;
+}
+
+/* Section background + spacing */
+section.py-5 {
+  background-color: #fff;
+}
+
+/* Responsive layout */
+@media (max-width: 767px) {
+  .custom-box {
+    height: 150px;
+    padding: 15px;
+  }
+
+  .custom-box-2 {
+    height: auto;
+    border: 1px solid #dee2e6;
+    border-radius: 20px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    padding: 20px;
+    transition: all 0.3s ease;
+    margin-bottom: 16px;
+
+  }
+
+  .background-circle {
+    height: 40px;
+    width: 40px;
+  }
+
+  .background-circle img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .custom-box p {
+    font-size: 14px;
+  }
+}
+
+
+/* {
+          } */
+
+
+
+/* UI UX Services icons */
+
+.step-by-step-div {
+  margin-top: 30px;
+  width: 700px;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.step-by-step-div-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Circle background fix */
+.background-circle2 {
+  background-color: white;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.479);
+}
+
+/* Icon (image) fix inside circle */
+.step-by-step-div-image img {
+  height: 82px;
+  width: 82px;
+  object-fit: contain;
+  /* ensures icon fits perfectly inside */
+}
+
+
+.process-heading {
+  margin-top: 10px;
+  /* adjust as per design */
+  margin-bottom: 8px;
+  /* control gap below heading */
+  font-weight: 600;
+  color: #2c2c2c;
+}
+
+
+
+/* =========================
+   ✅ CORE SERVICES SECTION CSS
+   ========================= */
+
+/* Section container spacing */
+.contact {
+  background-color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Main card container */
+.core-services-card {
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.193);
+  height: 159px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Optional hover effect (smooth and subtle) */
+.core-services-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Service icon inside each card */
+.core-service-image {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+
+/* Button alignment */
+.read-button {
+  background-color: #213C72;
+  color: white;
+  padding: 14px 40px;
+  /* border-radius: 25px; */
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.read-button:hover {
+  background-color: #152547;
+  transform: translateY(-3px);
+}
+
+
+/* WHy Choose us Image */
+.why-choose-us-image {
+  border-radius: 24px;
+}
+
+.why-choose-us-text {
+  color: #213C72;
+}
+
+
+
+/* Graphic Design Services */
+.container-services {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-service-div {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow:
+    2px 2px 3px 2px rgba(0, 0, 0, 0.12), 18px 18px 26px rgba(0, 0, 0, 0.08);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  height: 100%;
+}
+
+.about-service-div:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    2px 2px 3px 2px rgba(0, 0, 0, 0.12), 18px 18px 26px rgba(0, 0, 0, 0.08);
+}
+
+.about-service-icon {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border-radius: 50%;
+  background: var(--icon-bg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+.about-service-icon img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+}
+
+.service-heading {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  color: #0b1220;
+}
+
+.service-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.about-service-div p {
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2b2f33;
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (min-width: 1200px) {
+  .service-heading {
+    font-size: 30px;
+  }
+
+  .about-service-div p {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-service-div {
+    padding: 18px;
+  }
+
+  .service-heading {
+    font-size: 20px;
+  }
+
+  .about-service-icon {
+    margin-right: 12px;
+  }
+}
+
+/* Equal card height rows */
+.row-eq-height {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.row-eq-height>[class*="col-"] {
+  display: flex;
+}
+
+.row-eq-height .about-service-div {
+  flex: 1 1 auto;
+}
+
+
+.process-tital {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+
+
+/* FAQ Form */
+
+/* Main Section Background */
+.ask-any-question-section {
+  background-color: #1e3771;
+  /* navy blue */
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* Outer Container */
+.ask-any-question-div {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Input Field */
+.input-field {
+  margin-bottom: 24px;
+  width: 100%;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  padding: 32px 20px;
+  font-size: 18px;
+  color: #333;
+  box-shadow: 0 0 0 2px transparent;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-field::placeholder {
+  color: #a0a0a0;
+  font-weight: 400;
+}
+
+.input-field:focus {
+  box-shadow: 0 0 0 2px #ffffff80;
+}
+
+/* Submit Button */
+.submit-btn {
+  background: #ffffff;
+  color: #1e3771;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 28px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #e9eefb;
+  transform: translateY(-2px);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .input-field {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+
+  .submit-btn {
+    font-size: 16px;
+    padding: 8px 22px;
+  }
+}
+
+.custom-box p {
+  text-align: center;
+  font-size: 19px;
+  font-weight: 300;
+  color: #2c2c2c;
+}
+
+.proof p {
+  font-size: 22px;
+  font-weight: 200;
+}
+
+@media screen and (min-width: 358px) and (max-width: 766px) {
+
+  .ask-any-question-div {
+    max-width: 100%;
+    margin: auto;
+    padding: 15px 0px !important;
+  }
+
+  .form .input-field {
+
+    border-radius: 8px;
+
+  }
+
+
+  .background-circle {
+    margin-bottom: 15px !important;
+    margin-top: 8px !important;
+  }
+
+  .hero-section .hero-content {
+    padding: 0px;
+  }
+
+  .read-button {
+    font-size: 16px;
+    width: 100%;
+
+  }
+
+  .step-by-step-div {
+    margin-top: 8px;
+
+  }
+
+  .proof p {
+    text-align: left !important;
+    font-size: 16px !important;
+  }
+
+  .custom-box p {
+    font-size: 16px;
+
+  }
+
+
+  /* .business-benifits .custom-box  {
+  display: flex;
+  align-items: center;
+
+    } */
+
+
+  .business-benifits .custom-box p {
+    padding-top: 14px;
+  }
+
+  .why-choose-us h3 {
+    text-align: left !important;
+  }
+
+  .background-circle2 {
+
+    height: 57px;
+    width: 57px;
+
+  }
+
+  .step-by-step-div-image img {
+    height: 43px;
+    width: 43px;
+    object-fit: contain;
+  }
+
+  body {
+    text-align: left;
+
+  }
+
+  .icon-title {
+    font-weight: normal;
+  }
+
+  .why-choose-us .subtitle {
+    text-align: left !important;
+  }
+
+  .core-services-card {
+    font-size: 13px;
+    height: 121px;
+  }
+
+  .read-button {
+    font-size: 16px;
+
+  }
+
+  .step-by-step-div {
+
+    width: auto;
+
+    font-size: 13px;
+  }
+
+  .step-by-step-div h4 {
+
+    font-size: 18px;
+  }
+
+  .proof p {
+    text-align: left !important;
+
+  }
+
+  .mobile-menu2 {
+    color: #007bff !important;
+
+  }
+
+  .why-choose-us p {
+    font-size: 16px;
+    font-weight: 200 !important;
+    text-align: left !important;
+  }
+
+  .faq-card {
+    min-width: auto;
+  }
+
+
+
+}
+
+
+/* tab view */
+@media screen and (min-width: 767px) and (max-width: 1040px) {
+
+  .business-benifits .custom-box {
+    height: 128px !important;
+    padding-top: 30px;
+  }
+
+  .step-by-step-div-image img {
+    height: 68px;
+    width: 68px;
+    object-fit: contain;
+  }
+
+  .why-choose-us p {
+    font-size: 1em;
+    font-weight: 200;
+  }
+
+  .custom-box {
+    height: 180px !important;
+
+  }
+
+  .custom-box p {
+    font-size: 15px !important;
+  }
+
+
+  .core-services-card {
+    height: 150px !important;
+    padding: 20px;
+  }
+
+  .custom-box {
+    height: 170px !important;
+
+  }
+
+  .proof p {
+    text-align: center !important;
+
+  }
+
+  .mobile-menu2 {
+    color: #007bff !important;
+
+  }
+
+  .faq-card {
+    min-width: auto;
+  }
+
+
+}
+
+
+/* {
+
+    } */

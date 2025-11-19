@@ -1,0 +1,894 @@
+
+
+
+
+/* new content here */
+/* Header */
+.page-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-head h1 {
+  font-weight: 700;
+  letter-spacing: -.5px;
+  font-size: 42px;
+}
+
+.page-head p.lead {
+  margin-top: 10px;
+  font-size: 1.125rem;
+  color: #222;
+}
+
+
+
+img {
+    width: 400px;
+    max-width: 100% !important;
+    display: block;
+    display: block;
+}
+
+/* Left list items */
+.service-list .list-group-item {
+  border: .5px solid #213C72;
+  background: white;
+  border-radius: 12px;
+  padding: 22px 24px;
+  margin-bottom: 30px;
+  box-shadow: var(--item-shadow);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.service-circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #213C72;
+  display: inline-block;
+  flex: 0 0 auto;
+  margin-left: -4px;
+  /* slight alignment tweak */
+}
+
+/* filled/active circle */
+.service-circle.active {
+  background: #213C72;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05) inset;
+}
+
+.service-text {
+  font-size: 24px;
+  font-weight: 300;
+  color: #111;
+}
+
+/* Right column images layout */
+.images-wrap {
+  position: relative;
+  min-height: 240px;
+  margin-bottom: 12px;
+  display: flex;
+  /* align-items:center; */
+  justify-content: left;
+}
+
+.img-top {
+  width: 60%;
+  max-width: 350px;
+  border-radius: 12px;
+  height: 200px !important;
+
+  transform: translateY(0);
+  z-index: 20;
+}
+
+.img-bottom {
+  position: absolute;
+  right: -3%;
+  bottom: -36%;
+  width: 340px;
+  height: 200px !important;
+  /* max-width: 360px; */
+  border-radius: 12px;
+  /* box-shadow: 0 10px 24px rgba(0,0,0,0.18); */
+  z-index: 10;
+  transform: rotate(0deg);
+}
+
+/* Right text and CTA */
+.right-copy {
+  font-size: 24px;
+  font-weight: 200 !important;
+  line-height: 32px;
+  margin-top: 100px;
+}
+
+.btn-accent {
+  background: #213C72;
+  border: none;
+  color: #fff;
+  padding: .7rem 1.05rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(43, 74, 131, 0.18);
+}
+
+.btn-outline-accent {
+  color: #213C72;
+  border: 2px solid #213C72;
+  padding: .65rem 1rem;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+/* ===================== FAQ SLIDER (added) ===================== */
+.faq-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  /* hide overflow while we autoscroll */
+}
+
+/* Soft edge fade so it doesn't feel "cut" on the right/left */
+.faq-slider::before,
+.faq-slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 28px;
+  /* adjust if you want wider fade */
+  pointer-events: none;
+  z-index: 2;
+}
+
+.faq-slider::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.faq-slider::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.faq-track {
+  display: flex;
+  gap: 16px;
+  padding: 4px 12px;
+  /* side padding prevents visual “cut” at edges */
+  overflow: hidden;
+  /* auto-play uses scrollLeft */
+  scroll-behavior: auto;
+  /* we control motion via JS */
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: pan-x;
+  /* smoother horizontal dragging */
+  will-change: scroll-position;
+}
+
+.faq-track.dragging {
+  cursor: grabbing;
+}
+
+.faq-card {
+  flex: 0 0 clamp(260px, 30vw, 360px);
+  /* responsive card width */
+  border: 1px solid #e9ecef;
+  border-radius: 12px;
+  padding: 16px;
+  background: #fff;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, .04);
+}
+
+/* Reduced motion: stop any animation-driven behavior fallback */
+@media (prefers-reduced-motion: reduce) {
+  .faq-slider .faq-track {
+    overflow-x: auto;
+  }
+}
+
+/* Keep existing breakpoints you shared earlier for FAQ */
+@media screen and (min-width: 370px) and (max-width: 576px) {
+  .faq-card {
+    flex-basis: clamp(240px, 80vw, 360px);
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .faq-card {
+    flex-basis: clamp(260px, 40vw, 360px);
+  }
+}
+
+/* ===================== YOUR EXISTING STYLES (combined) ===================== */
+/* ---------- Common Styles ---------- */
+.our-mission-icons {
+  width: 54px;
+  margin: auto;
+  font-size: 40px;
+}
+
+.mission-right-img {
+  height: 400px;
+  border-radius: 30px;
+  width: 70%;
+  margin: auto;
+}
+
+.mission-right-img img {
+  border-radius: 10px;
+}
+
+.our-mission-right-img img {
+  height: 300px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.our-impact-number {
+  padding: 60px 0;
+}
+
+/* ---------- Card Styles ---------- */
+.our-impact-number-div {
+  background: #E5EDFF;
+  /* light blue background */
+  border-radius: 12px;
+  padding: 30px;
+  transition: all 0.3s ease;
+  height: 170px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+/* Circle for icon */
+.our-impact-number-div .icon-circle {
+  background: #fff;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.our-impact-number-div img {
+  width: 40px;
+  height: 40px;
+}
+
+/* What we do Text */
+.impact-heading {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+/* Description */
+.our-impact-number-div p {
+  color: #666;
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Hover effect */
+.our-impact-number-div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Layout Styles ---------- */
+.second-row {
+  width: 70%;
+  margin: auto;
+}
+
+.mission .row {
+  height: 300px;
+}
+
+.why-choose-div {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  /* padding-right: 7px; */
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.386);
+  border-radius: 20px;
+  gap: 8px;
+}
+
+.why-choose-div-icon {
+  /* width: 50px; */
+  display: flex;
+  align-items: center;
+}
+
+/* What We Do border rounded */
+.background-circle {
+  background-color: #ffffff6e;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.479);
+}
+
+.who-we-are p {
+  font-size: 20px;
+}
+
+/* text gap */
+.icon-gap {
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.text-align {
+  margin-top: 0%;
+}
+
+/* Mission Vision */
+.text-size {
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.p-text {
+  font-size: 24px;
+  font-weight: 250;
+}
+
+/* Why Choose us */
+.redio-icon {
+  width: 24px;
+}
+
+.why-para {
+  font-size: 18px;
+  margin: 0px;
+}
+
+/* Grow Text */
+.text-main {
+  font-size: 42px;
+}
+
+.text-para {
+  font-size: 20px;
+  font-weight: 250;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.text-link {
+  color: #213C72;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.list-group-item:hover {
+  box-shadow: 0px 0px 2px 2px #dbdbdb;
+}
+.service-list .list-group-item {
+    border:1px solid #dbdbdb;
+    
+}
+.our-impact-number p {
+ 
+    text-align: center !important;
+}
+
+
+/* ---------- Responsive: 358–576 ---------- */
+@media screen and (min-width: 358px) and (max-width: 576px) {
+
+  .page-head h1 {
+    font-size: 2rem;
+  }
+
+  .service-list .list-group-item {
+    padding: 16px;
+  }
+
+  .service-text {
+    font-size: 1.05rem;
+  }
+
+  .images-wrap {
+    margin-bottom: 18px;
+  }
+
+  .img-top {
+    width: 80%;
+    max-width: 100%;
+  }
+
+
+  .img-bottom {
+    position: relative;
+    right: 228px;
+    bottom: -95px;
+    /* z-index: 1000; */
+    display: block;
+    width: 80%;
+    margin-top: 12px;
+  }
+
+  .our-mission-right-img img {
+    height: 220px;
+  }
+
+  .mission .row,
+  .mission-right-img {
+    height: 100% !important;
+    gap: 0px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+  }
+
+  .why-choose-div {
+    margin-top: 20px;
+    border-radius: 12px;
+  }
+
+  .mission .row,
+  .mt-5 {
+    margin-top: 0px !important;
+  }
+
+  .text-size {
+    font-size: 32px;
+  }
+
+  .who-we-are p {
+    font-size: 16px;
+  }
+
+  .second-row {
+    width: 100%;
+  }
+
+  .mission-row .text-right {
+    display: flex !important;
+    justify-content: flex-start !important;
+  }
+
+  .text-para {
+    padding-left: 0px;
+    padding-right: 10px;
+    text-align: left;
+  }
+
+  .text-link {
+    text-align: left;
+  }
+
+  .form-box {
+    width: 100%;
+  }
+}
+
+/* ---------- Responsive: 767–1024 ---------- */
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+
+
+  .right-copy {
+    font-size: 16px;
+    font-weight: 200 !important;
+    line-height: 1.6;
+    margin-top: 0px;
+    height: 100px;
+}
+.about-services button
+ {
+   font-size: 12px !important;
+}
+
+.img-top {
+   
+    height: 120px !important;
+   
+}
+.img-bottom {
+   
+    height: 120px !important;
+ 
+}
+.images-wrap {
+   
+    margin-bottom: 0px;
+  
+}
+.our-impact-number p {
+    
+    text-align: center !important;
+}
+
+
+  .page-head h1 {
+    font-size: 2rem;
+  }
+
+  .service-list .list-group-item {
+    padding: 16px;
+  }
+
+  .service-text {
+    font-size: 1.05rem;
+  }
+
+  .images-wrap {
+    margin-left: 90px;
+    /* margin-bottom: 18px; */
+  }
+
+  .img-top {
+    width: 80%;
+    max-width: 100%;
+  }
+
+
+  .img-bottom {
+    position: relative;
+    right: 228px;
+    bottom: -95px;
+    /* z-index: 1000; */
+    display: block;
+    width: 80%;
+    margin-top: 12px;
+  }
+
+
+  .mission .mt-4 {
+    margin-top: 0px !important;
+  }
+
+  .icon-bg-circle {
+    height: 32px !important;
+    width: 32px !important;
+    min-width: 32px !important;
+  }
+
+  .our-impact-number-div .background-circle,
+  .our-impact-number-div .icon-bg-circle {
+    height: 32px !important;
+    width: 32px !important;
+    min-width: 32px !important;
+  }
+
+  .mission .row {
+    height: auto;
+  }
+
+  .who-we-are p {
+    font-size: 15px;
+  }
+
+  .mission-right-img img,
+  .mission-right-img {
+    height: auto;
+    width: 100%;
+  }
+
+  .mission-right-img img {
+    height: 200px;
+  }
+
+  .our-impact-number-div {
+    height: 300px;
+  }
+
+  .our-impact-number-div p {
+    font-size: 14px;
+  }
+
+  .impact-heading {
+    font-size: 16px;
+  }
+
+  .our-impact-number-div2 {
+    height: 230px;
+  }
+
+  .text-size {
+    font-size: 32px;
+  }
+
+  .p-text {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .our-mission-right-img img {
+    height: 210px;
+  }
+
+  .why-choose-div {
+    width: 550px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 16px;
+  }
+
+  .form-box {
+    width: 90%;
+    margin: auto;
+  }
+
+  .mission {
+    width: 80%;
+    margin: auto;
+  }
+
+  .text-para {
+    font-size: 20px;
+    font-weight: 250;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .mobile-menu2 {
+    color: #007bff !important;
+  }
+}
+
+/* --- Uniform circular icon container --- */
+.our-impact-number-div .background-circle,
+.our-impact-number-div .icon-bg-circle {
+  width: 54px;
+  height: 56px;
+  min-width: 54px;
+  /* keeps layout from squishing */
+  border-radius: 50% !important;
+  /* perfect circle */
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+  /* hides odd edges of tall/wide svgs/pngs */
+}
+
+/* --- Make every icon scale nicely inside the circle --- */
+.our-impact-number-div .background-circle img,
+.our-impact-number-div .icon-bg-circle img {
+  width: 72% !important;
+  /* adjust between 60–80% to taste */
+  height: 72% !important;
+  object-fit: contain !important;
+  /* no distortion */
+  object-position: center !important;
+  display: block !important;
+}
+
+/* Optional: align the text nicely with the icon row */
+.our-impact-number-div .d-flex.mb-2 {
+  align-items: center;
+  /* vertical alignment of icon + heading */
+  gap: 12px;
+  /* even spacing */
+}
+
+/* ✅ Responsive tweak so icons don’t feel huge on small screens */
+@media (max-width: 576px) {
+
+  .our-impact-number-div .background-circle,
+  .our-impact-number-div .icon-bg-circle {
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+  }
+
+  .our-impact-number-div .background-circle img,
+  .our-impact-number-div .icon-bg-circle img {
+    width: 70% !important;
+    height: 70% !important;
+  }
+}
+
+@media screen and (min-width: 358px) and (max-width: 576px) {
+  .page-head h1 {
+    font-size: 2rem;
+  }
+
+
+  .right-copy {
+    font-size: 20px;
+    font-weight: 200 !important;
+    line-height: 24px;
+    margin-top: 120px;
+}
+
+  .service-list .list-group-item {
+    padding: 16px;
+  }
+
+  .service-text {
+    font-size: 1.05rem;
+    width: 100%;
+    text-align: left;
+    padding-left: 8px;
+  }
+
+  .images-wrap {
+    margin-bottom: 18px;
+  }
+
+  .img-top {
+    height: 170px !important;
+    width: 80%;
+    max-width: 100%;
+  }
+
+  .img-bottom {
+    height: 170px !important;
+    position: relative;
+    right: 208px;
+    bottom: -135px;
+    display: block;
+    width: 80%;
+    margin-top: 12px;
+  }
+
+  .our-mission-right-img img {
+    height: 220px;
+  }
+
+  .mission .row,
+  .mission-right-img {
+    height: 100% !important;
+    gap: 0px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+  }
+
+  .why-choose-div {
+    margin-top: 20px;
+    border-radius: 12px;
+  }
+
+  .mission .row,
+  .mt-5 {
+    margin-top: 0px !important;
+  }
+
+  .text-size {
+    font-size: 32px;
+  }
+
+  .who-we-are p {
+    font-size: 16px;
+  }
+
+  .second-row {
+    width: 100%;
+  }
+
+  .mission-row .text-right {
+    display: flex !important;
+    justify-content: flex-start !important;
+  }
+
+  .text-para {
+    padding-left: 0px;
+    padding-right: 10px;
+    text-align: left;
+  }
+
+  .text-link {
+    text-align: left;
+  }
+
+  .form-box {
+    width: 100%;
+  }
+
+
+  .mobile-display .accordion-button {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: transparent;
+    border: 1px solid #213c72;
+    padding: 20px;
+
+  }
+
+  .accordion-body {
+    padding-bottom: 15px;
+
+  }
+
+
+
+
+}
+
+/* 767–1024px */
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .info-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .nav-pills .nav-link {
+    height: 75px;
+    border-radius: 16px;
+  }
+
+  .left .item-text {
+    font-size: 16px !important;
+    text-align: left;
+  }
+
+  .icon-svg {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .icon-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+
+  .arrow-circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .info-desc {
+    text-align: left;
+    font-size: 16px;
+  }
+
+  .info-title {
+    text-align: left;
+  }
+
+  .visual-img {
+    width: 193px;
+    height: 193px;
+  }
+
+  .lead .text-muted {
+    font-size: 16px;
+  }
+
+
+
+
+}
+
+
+
+
+@media (min-width: 1024px) {
+  .why-choose-div {
+    width:auto  !important;
+    margin: auto;
+    height: 120px;
+    margin-top: 20px;
+    padding: 16px;
+}
+  }

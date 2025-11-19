@@ -1,0 +1,1610 @@
+/* new Section About Service */
+
+
+/* Smooth transition for hover */
+.list-group-item.list-control {
+  transition: all 0.25s ease;
+  cursor: pointer;
+  border: 1px solid #d8e0f0;
+  border-radius: 12px;
+}
+
+/* Hover effect */
+.list-group-item.list-control:hover {
+  background: #f5f8ff;
+  border-color: #213C72;
+  /* or your brand color */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.26);
+}
+
+/* Circle hover color */
+.list-group-item.list-control:hover .service-circle {
+  background-color: #213C72;
+}
+
+/* Text hover color */
+.list-group-item.list-control:hover .service-text {
+  color: #213C72;
+}
+
+
+
+
+/* Header */
+.page-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-head h1 {
+  font-weight: 700;
+  letter-spacing: -.5px;
+  font-size: 3rem;
+}
+
+.page-head p.lead {
+  margin-top: 10px;
+  font-size: 1.125rem;
+  color: #222;
+}
+
+/* Left list items */
+.service-list .list-group-item {
+  border: none;
+  background: white;
+  border-radius: 12px;
+  padding: 22px 24px;
+  margin-bottom: 18px;
+  box-shadow: var(--item-shadow);
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.service-circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #213C72;
+  display: inline-block;
+  flex: 0 0 auto;
+  margin-left: -4px;
+  /* slight alignment tweak */
+}
+
+/* filled/active circle */
+.service-circle.active {
+  background: var(--accent);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05) inset;
+}
+
+.service-text {
+  font-size: 24px;
+  font-weight: 300;
+  color: #111;
+}
+
+/* Right column images layout */
+.images-wrap {
+  position: relative;
+  min-height: 240px;
+  margin-bottom: 12px;
+  display: flex;
+  /* align-items:center; */
+  justify-content: left;
+}
+
+.img-top {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+
+  transform: translateY(0);
+  z-index: 20;
+}
+
+.img-bottom {
+  position: absolute;
+  right: -3%;
+  bottom: -56%;
+  width: 340px;
+  height: 240px !important;
+  /* max-width: 360px; */
+  border-radius: 12px;
+  /* box-shadow: 0 10px 24px rgba(0,0,0,0.18); */
+  z-index: 10;
+  transform: rotate(0deg);
+}
+
+/* Right text and CTA */
+.right-copy {
+  font-size: 22px;
+  font-weight: 200 !important;
+  line-height: 32px;
+  margin-bottom: 0px;
+  margin-top: 90px;
+}
+
+.btn-accent {
+  background: #213C72;
+  border: none;
+  color: #fff;
+  padding: .7rem 1.05rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(43, 74, 131, 0.18);
+}
+
+.btn-outline-accent {
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  padding: .65rem 1rem;
+  border-radius: 10px;
+  background: #fff;
+}
+
+/* Responsive tweaks */
+
+
+
+
+
+
+/* =========================
+   ✅ DELIVERABLES SECTION CSS (UNIFORM ICONS)
+   ========================= */
+
+/* Main deliverables box */
+.custom-box {
+  height: 180px !important;
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Hover lift animation */
+.custom-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* ✅ Circle behind icons — fixed 52px */
+.background-circle {
+  background-color: #213c7233;
+  /* or your desired bg color */
+  border-radius: 50%;
+  height: 52px;
+  width: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px auto;
+  box-shadow: inset 0px 0px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* ✅ Icon inside circle — fixed 42px */
+.background-circle img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Text under each icon */
+.custom-box p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 8px;
+  color: #2c2c2c;
+}
+
+/* Section background + spacing */
+section.py-5 {
+  background-color: #fff;
+}
+
+/* Responsive layout */
+@media (max-width: 767px) {
+  .custom-box {
+    padding: 15px;
+  }
+
+  .background-circle {
+    height: 48px;
+    width: 48px;
+  }
+
+  .background-circle img {
+    width: 38px;
+    height: 38px;
+  }
+
+  .custom-box p {
+    font-size: 20px;
+  }
+}
+
+
+/* {
+          } */
+
+
+
+/* UI UX Services icons */
+
+.step-by-step-div {
+  margin-top: 30px;
+  width: 700px;
+  border-radius: 20px;
+  padding: 15px;
+}
+
+.step-by-step-div-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Circle background fix */
+.background-circle2 {
+  margin: auto;
+  margin-bottom: 16px;
+  background-color: white;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 0px 0px 6px 0px rgba(0, 0, 0, 0.479);
+}
+
+/* Icon (image) fix inside circle */
+.step-by-step-div-image img {
+  height: 42px;
+  width: 42px;
+  object-fit: contain;
+  /* ensures icon fits perfectly inside */
+}
+
+
+.process-heading {
+  margin-top: 10px;
+  /* adjust as per design */
+  margin-bottom: 8px;
+  /* control gap below heading */
+  font-weight: 600;
+  color: #2c2c2c;
+}
+
+
+
+/* =========================
+   ✅ CORE SERVICES SECTION CSS
+   ========================= */
+
+/* Section container spacing */
+.contact {
+  background-color: #fff;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Main card container */
+.core-services-card {
+  border-radius: 20px;
+  box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.193);
+  height: 159px;
+  padding: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* Optional hover effect (smooth and subtle) */
+.core-services-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 4px 8px 12px rgba(0, 0, 0, 0.25);
+}
+
+/* Service icon inside each card */
+.core-service-image {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+
+/* Button alignment */
+.read-button {
+  background-color: #213C72;
+  color: white;
+  padding: 14px 40px;
+  /* border-radius: 25px; */
+  border: none;
+  font-weight: 400;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+.read-button:hover {
+  background-color: #152547;
+  transform: translateY(-3px);
+}
+
+
+/* WHy Choose us Image */
+.why-choose-us-image {
+  border-radius: 24px;
+}
+
+.why-choose-us-text {
+  color: #213C72;
+}
+
+
+
+/* Develoment Services */
+.container-services {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-service-div {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 22px;
+  box-shadow:
+    2px 2px 3px 2px rgba(0, 0, 0, 0.12), 18px 18px 26px rgba(0, 0, 0, 0.08);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  height: 100%;
+}
+
+.head-text {
+  font-size: 24px;
+  margin: 0px;
+  font-weight: 500;
+}
+
+.p-text {
+  font-size: 16px;
+}
+
+
+.about-service-div:hover {
+  transform: translateY(-6px);
+  box-shadow:
+    2px 2px 3px 2px rgba(0, 0, 0, 0.12), 18px 18px 26px rgba(0, 0, 0, 0.08);
+}
+
+.cardicon-gap {
+  gap: 0px;
+  align-items: center;
+}
+
+
+.about-service-icon {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border-radius: 50%;
+  background: var(--icon-bg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 16px;
+  flex-shrink: 0;
+}
+
+.about-service-icon img {
+  width: 35px;
+  height: 51px;
+  object-fit: contain;
+  display: block;
+}
+
+.service-heading {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  color: #0b1220;
+}
+
+.service-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.about-service-div p {
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2b2f33;
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (min-width: 1200px) {
+  .service-heading {
+    font-size: 30px;
+  }
+
+  .about-service-div p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-service-div {
+    padding: 18px;
+  }
+
+  .service-heading {
+    font-size: 20px;
+  }
+
+  .about-service-icon {
+    margin-right: 12px;
+  }
+}
+
+
+/* our core development */
+
+/* base reset for this section */
+.contact {
+  background: #fff;
+}
+
+.contact h2 {
+  font-size: 32px !important;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.why-choose-us h2{
+  font-size: 32px !important;
+}
+
+.contact p.lead {
+  font-size: 1.05rem;
+  color: var(--muted);
+}
+
+/* row spacing */
+.row.gy-4 {
+  row-gap: 1.6rem;
+}
+
+/* Pill card */
+.our-development-div {
+  position: relative;
+  background: var(--card-bg);
+  border-radius: var(--card-radius);
+  border: 1px solid var(--card-border);
+  box-shadow:
+    inset 0 1px 0 var(--card-inset),
+    0 10px 22px rgba(20, 20, 20, 0.04);
+  padding: 26px 36px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  min-height: 96px;
+  overflow: visible;
+  transition: transform .16s ease, box-shadow .16s ease;
+}
+
+.our-development-div:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(15, 15, 15, 0.08);
+}
+
+/* content area */
+.our-development-content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.our-development-content h6 {
+  margin: 0 0 6px 0;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.our-development-content p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+  line-height: 1.6;
+}
+
+/* Decorative dot (navy circle with white ring and shadow) */
+/* Card base */
+/* Base card */
+.our-development-div {
+  position: relative;
+  padding: 22px;
+  border: 1px solid #cfd8e6;
+  border-radius: 18px;
+  background: #ffffff;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* LEFT SIDE GLOW */
+.our-development-div::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px;
+  height: 100%;
+  background: linear-gradient(180deg, #213C72, #4d6aa6);
+  border-radius: 8px 0 0 8px;
+
+  /* Glow + blur */
+  box-shadow: 0 0 18px rgba(33, 60, 114, 0.7);
+
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.35s ease;
+}
+
+/* Hover effect */
+.our-development-div:hover::before {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Optional smooth lift */
+.our-development-div:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon default hidden */
+.our-development-div .our-development-icon img {
+  opacity: 0;
+  transform: scale(0.6);
+  transition: all 0.35s ease;
+}
+
+/* On hover icon appears */
+.our-development-div:hover .our-development-icon img {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+
+/* tools & technologies effect */
+/* Base style */
+.courses-div {
+  position: relative;
+  padding: 14px 0;
+  background: #ffffff;
+  text-align: center;
+  font-weight: 300;            /* Normal = 300 */
+  border-radius: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background-color 0.25s ease,
+    font-weight 0.25s ease;
+  z-index: 0;
+}
+
+/* Hover lift + background */
+.courses-div:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.10);
+  background-color: #213C72;   /* Hover background color */
+  color: #ffffff;              /* Text becomes white */
+  font-weight: 600;            /* Hover = 600 */
+}
+
+/* TOP running stroke */
+.courses-div::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 4px;                /* stroke thickness */
+  width: 0%;                  /* hidden default */
+  border-radius: 2px;
+  z-index: 1;
+
+  /* White running stroke */
+  background: linear-gradient(90deg, #ffffff, #f3f3f3, #ffffff);
+  background-size: 200% 100%;
+
+  opacity: 0;
+  transition: width 0.35s ease, opacity 0.25s ease;
+  pointer-events: none;
+}
+
+/* Show white moving stroke */
+.courses-div:hover::before {
+  width: 100%;
+  opacity: 1;
+  animation: runningWhite 1.8s linear infinite;
+}
+
+/* Animation for stroke */
+@keyframes runningWhite {
+  0%   { background-position:   0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position:   0% 50%; }
+}
+
+/* Keep text above stroke */
+.courses-div > * {
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+
+/* icon and card our development process */
+.our-development-icon {
+  width: var(--dot-size-lg);
+  height: var(--dot-size-lg);
+  min-width: var(--dot-size-lg);
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, var(--dot-gradient-1) 10%, var(--dot-color) 60%);
+  border: var(--dot-border-lg) solid #ffffff;
+  /* white ring */
+  box-shadow:
+    0 10px 22px rgba(15, 20, 35, 0.18),
+    inset 0 4px 10px rgba(255, 255, 255, 0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* show the icon image inside the dot */
+.our-development-icon img {
+  display: block;
+  width: 40px;
+  /* adjust size inside dot */
+  height: 55%;
+  object-fit: contain;
+  filter: none;
+  opacity: 1;
+  pointer-events: none;
+}
+
+/* Left-side dot overlapping pill */
+.our-development-div .our-development-icon {
+  height: 40px;
+  width: 40px;
+  position: relative;
+}
+
+/* Right-side dot for reversed pills */
+.our-development-div.reverse .our-development-icon {
+  transform: translateX(46px);
+  order: 2;
+  margin-left: 1rem;
+}
+
+
+/* Provide extra padding so dot doesn't overlap text */
+.our-development-div {
+  padding-left: 54px;
+  padding-right: 54px;
+}
+
+.our-development-div.reverse {
+  justify-content: space-between;
+}
+
+/* Large screen fine-tune */
+@media (min-width: 992px) {
+  .our-development-div {
+    padding: 28px 44px;
+    min-height: 96px;
+  }
+
+  .our-development-div.reverse .our-development-icon {
+    transform: translateX(46px);
+  }
+}
+
+/* On smaller screens keep icon inside the pill (no overlap) */
+@media (max-width: 991.98px) {
+  .our-development-div {
+    padding-left: 26px;
+    padding-right: 26px;
+    min-height: 88px;
+    gap: 0.75rem;
+  }
+
+  .our-development-div .our-development-icon,
+  .our-development-div.reverse .our-development-icon {
+    transform: translateX(0) !important;
+    order: 0;
+    margin-right: 12px;
+  }
+
+  .our-development-div.reverse {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+
+
+
+/* lastrbchanges dones... */
+.technologies-we-use-div {
+  width: 80%;
+  margin: auto;
+}
+
+
+
+/* Very small screens adjustments */
+@media (max-width: 575.98px) {
+  .our-development-div {
+    padding: 18px 18px;
+    min-height: auto;
+  }
+
+  .our-development-content h6 {
+    font-size: 1.02rem;
+  }
+
+  .our-development-content p {
+    font-size: 0.95rem;
+  }
+
+  .our-development-icon {
+    width: var(--dot-size-sm);
+    height: var(--dot-size-sm);
+    min-width: var(--dot-size-sm);
+    border: var(--dot-border-sm) solid #fff;
+    box-shadow:
+      0 8px 16px rgba(15, 20, 35, 0.14),
+      inset 0 3px 8px rgba(255, 255, 255, 0.12);
+  }
+
+  .our-development-div {
+    height: 170px !important;
+    padding-left: 22px;
+    padding-right: 22px;
+  }
+}
+
+
+/* Equal card height rows */
+.row-eq-height {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.row-eq-height>[class*="col-"] {
+  display: flex;
+}
+
+.row-eq-height .about-service-div {
+  flex: 1 1 auto;
+}
+
+
+.process-tital {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+
+
+/* FAQ Form */
+
+/* Main Section Background */
+.ask-any-question-section {
+  background-color: #1e3771;
+  /* navy blue */
+  padding: 80px 0;
+  text-align: center;
+}
+
+/* Outer Container */
+.ask-any-question-div {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Input Field */
+.input-field {
+  margin-bottom: 24px;
+  width: 100%;
+  background: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  padding: 100px 20px;
+  font-size: 18px;
+  color: #333;
+  box-shadow: 0 0 0 2px transparent;
+  transition: box-shadow 0.3s ease;
+}
+
+.input-field::placeholder {
+  color: #a0a0a0;
+  font-weight: 400;
+}
+
+.input-field:focus {
+  box-shadow: 0 0 0 2px #ffffff80;
+}
+
+/* Submit Button */
+.submit-btn {
+  background: #ffffff;
+  color: #1e3771;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 28px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background: #e9eefb;
+  transform: translateY(-2px);
+}
+
+
+.our-development-div {
+  background-color: #ffffff;
+  border: 1px solid #213c72;
+  border-radius: 18px;
+  height: 130px;
+}
+
+
+
+/* Responsive */
+@media (max-width: 576px) {
+  .input-field {
+    font-size: 16px;
+    padding: 12px 16px;
+  }
+
+  .submit-btn {
+    font-size: 16px;
+    padding: 8px 22px;
+  }
+}
+
+
+@media screen and (min-width: 358px) and (max-width: 766px) {
+  .mobile-display .accordion-button {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: transparent;
+    border: 1px solid #213c72;
+    padding: 20px;
+  }
+
+  .img-bottom {
+    position: relative;
+    right: 188px;
+    bottom: -135px;
+    display: block;
+    width: 80%;
+    margin-top: 12px;
+  }
+
+
+  .img-top {
+    width: 80%;
+    max-width: 100%;
+  }
+
+
+
+
+
+
+  .why-choose-us .py-4 {
+
+    padding: 14px !important;
+
+  }
+
+
+
+  .courses-div {
+
+    padding: 10px 5px;
+
+  }
+
+  .hero-section .hero-content {
+    padding: 0px;
+  }
+
+  .background-circle2 img {
+    height: 40px !important;
+    width: 40px !important;
+
+  }
+
+  body {
+    text-align: left;
+
+  }
+
+  .right-card {
+    height: auto !important;
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
+
+
+  .why-choose-us .subtitle {
+    text-align: left !important;
+  }
+
+  .core-services-card {
+    font-size: 11px;
+    height: 136px;
+  }
+
+  .text-center{
+    font-size: 20px !important;
+  }
+
+  .custom-box p {
+    font-size: 16px !important;
+}
+
+  .technologies-we-use-div {
+    width: 100%;
+    margin: 0px 0px;
+  }
+
+  .why-choose-us .container-fluid {
+    padding: 20px !important;
+  }
+
+  .read-button {
+    font-size: 16px;
+
+  }
+
+  .step-by-step-div {
+
+    width: auto;
+
+    font-size: 13px;
+  }
+
+  .step-by-step-div h4 {
+
+    font-size: 18px;
+  }
+
+  .proof p {
+    text-align: left !important;
+
+  }
+
+  .mobile-menu2 {
+    color: #007bff !important;
+
+  }
+
+
+
+
+}
+
+
+/* tab view */
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .core-services-card {
+    font-size: 12px;
+    height: 120px !important;
+    padding: 20px;
+  }
+
+  .text-center {
+    font-size: 14px !important;
+    text-align: center !important;
+}
+.custom-box p {
+    font-size: 12px !important;
+    font-weight: 500;
+    margin-top: 8px;
+    color: #2c2c2c;
+}
+
+img {
+    width: 32px;
+    max-width: 100%;
+    display: block;
+    display: block;
+}
+
+.background-circle2 {
+    height: 42px !important;
+    width: 42px !important;
+}
+
+.our-development-content p {
+    font-size: 12px !important;
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+.our-development-content h6 {
+  font-size: 15px !important;
+    margin: 0 0 6px 0;
+    font-weight: 700;
+    font-size: 1.15rem;
+}
+
+
+
+  .custom-box {
+    height: 160px !important;
+
+  }
+
+  .proof p {
+    text-align: left !important;
+
+  }
+
+  .mobile-menu2 {
+    color: #007bff !important;
+
+  }
+
+
+}
+
+
+
+
+
+
+
+.courses-div {
+  background-color: rgb(255, 255, 255);
+  /* margin: auto; */
+  border-radius: 30px;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+
+/* {
+
+    } */
+
+
+
+/* Header */
+.page-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-head h1 {
+  font-weight: 700;
+  letter-spacing: -.5px;
+  font-size: 42px;
+}
+
+.page-head p.lead {
+  margin-top: 10px;
+  font-size: 1.125rem;
+  color: #222;
+}
+
+/* Left list items */
+.service-list .list-group-item {
+  border: .5px solid #213C72;
+  background: white;
+  border-radius: 12px;
+  padding: 22px 24px;
+  margin-bottom: 30px;
+  box-shadow: var(--item-shadow);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.service-circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid #213C72;
+  display: inline-block;
+  flex: 0 0 auto;
+  margin-left: -4px;
+  /* slight alignment tweak */
+}
+
+/* filled/active circle */
+.service-circle.active {
+  background: #213C72;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.05) inset;
+}
+
+.service-text {
+  font-size: 24px;
+  font-weight: 300;
+  color: #111;
+}
+
+/* Right column images layout */
+.images-wrap {
+  position: relative;
+  min-height: 240px;
+  margin-bottom: 12px;
+  display: flex;
+  /* align-items:center; */
+  justify-content: left;
+}
+
+.img-top {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px;
+  height: 200px !important;
+
+  transform: translateY(0);
+  z-index: 20;
+}
+
+.img-bottom {
+  position: absolute;
+  right: 7%;
+  bottom: -36%;
+  width: 340px;
+  height: 200px !important;
+  /* max-width: 360px; */
+  border-radius: 12px;
+  /* box-shadow: 0 10px 24px rgba(0,0,0,0.18); */
+  z-index: 10;
+  transform: rotate(0deg);
+}
+
+/* Right text and CTA */
+/* .right-copy {
+  font-size: 24px;
+  font-weight: 200 !important;
+  line-height: 32px;
+  margin-top: 100px;
+} */
+
+.btn-accent {
+  background: #213C72;
+  border: none;
+  color: #fff;
+  padding: .7rem 1.05rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(43, 74, 131, 0.18);
+}
+
+.btn-outline-accent {
+  color: #213C72;
+  border: 2px solid #213C72;
+  padding: .65rem 1rem;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+/* ---------- Responsive: 358–576 ---------- */
+@media screen and (min-width: 358px) and (max-width: 576px) {
+
+  .page-head h1 {
+    font-size: 2rem;
+  }
+
+  .service-list .list-group-item {
+    padding: 16px;
+  }
+
+  .service-text {
+    font-size: 1.05rem;
+  }
+
+  .images-wrap {
+    margin-bottom: 18px;
+  }
+
+  .img-top {
+    width: 80%;
+    max-width: 100%;
+  }
+
+
+  .img-bottom {
+    position: relative;
+    right: 228px;
+    bottom: -95px;
+    /* z-index: 1000; */
+    display: block;
+    width: 80%;
+    margin-top: 12px;
+  }
+
+  .our-mission-right-img img {
+    height: 220px;
+  }
+
+  .mission .row,
+  .mission-right-img {
+    height: 100% !important;
+    gap: 0px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+  }
+
+  .why-choose-div {
+    margin-top: 20px;
+    border-radius: 12px;
+  }
+
+  .mission .row,
+  .mt-5 {
+    margin-top: 0px !important;
+  }
+
+  .text-size {
+    font-size: 32px;
+  }
+
+  .who-we-are p {
+    font-size: 16px;
+  }
+
+  .second-row {
+    width: 100%;
+  }
+
+  .mission-row .text-right {
+    display: flex !important;
+    justify-content: flex-start !important;
+  }
+
+  .text-para {
+    padding-left: 0px;
+    padding-right: 10px;
+    text-align: left;
+  }
+
+  .text-link {
+    text-align: left;
+  }
+
+  .form-box {
+    width: 100%;
+  }
+}
+
+/* ---------- Responsive: 767–1024 ---------- */
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+
+  .page-head h1 {
+    font-size: 2rem;
+  }
+
+  .service-list .list-group-item {
+    padding: 16px;
+  }
+
+  .service-text {
+    font-size: 1.05rem;
+  }
+
+  .images-wrap {
+    margin-left: 90px;
+    /* margin-bottom: 18px; */
+  }
+
+  .img-top {
+    height: 200px !important;
+    width: 80%;
+    max-width: 100%;
+  }
+
+
+  .img-bottom {
+    position: relative;
+    right: 248px;
+    bottom: -115px;
+    /* z-index: 1000; */
+    display: block;
+    width: 70%;
+    margin-top: 12px;
+}
+
+  .mission .mt-4 {
+    margin-top: 0px !important;
+  }
+
+  .icon-bg-circle {
+    height: 32px !important;
+    width: 32px !important;
+    min-width: 32px !important;
+  }
+
+  .our-impact-number-div .background-circle,
+  .our-impact-number-div .icon-bg-circle {
+    height: 32px !important;
+    width: 32px !important;
+    min-width: 32px !important;
+  }
+
+  .mission .row {
+    height: auto;
+  }
+
+  .who-we-are p {
+    font-size: 15px;
+  }
+
+  .mission-right-img img,
+  .mission-right-img {
+    height: auto;
+    width: 100%;
+  }
+
+  .mission-right-img img {
+    height: 200px;
+  }
+
+  .our-impact-number-div {
+    height: 300px;
+  }
+
+  .our-impact-number-div p {
+    font-size: 14px;
+  }
+
+  .impact-heading {
+    font-size: 16px;
+  }
+
+  .our-impact-number-div2 {
+    height: 230px;
+  }
+
+  .text-size {
+    font-size: 32px;
+  }
+
+  .p-text {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  .our-mission-right-img img {
+    height: 210px;
+  }
+
+  .why-choose-div {
+    width: 550px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 16px;
+  }
+
+  .form-box {
+    width: 90%;
+    margin: auto;
+  }
+
+  .mission {
+    width: 80%;
+    margin: auto;
+  }
+
+  .text-para {
+    font-size: 20px;
+    font-weight: 250;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .mobile-menu2 {
+    color: #007bff !important;
+  }
+}
+
+@media screen and (min-width: 358px) and (max-width: 576px) {
+  .page-head h1 {
+    font-size: 2rem;
+  }
+
+  .service-list .list-group-item {
+    padding: 16px;
+  }
+
+  .service-text {
+    font-size: 1.05rem;
+    width: 100%;
+    text-align: left;
+    padding-left: 8px;
+  }
+
+  .images-wrap {
+    margin-bottom: 18px;
+  }
+
+  .img-top {
+    width: 80%;
+    max-width: 100%;
+  }
+
+  .img-bottom {
+    position: relative;
+    right: 210px;
+    bottom: -135px;
+    display: block;
+    width: 80%;
+    margin-top: 12px;
+  }
+
+  .our-mission-right-img img {
+    height: 220px;
+  }
+
+  .mission .row,
+  .mission-right-img {
+    height: 100% !important;
+    gap: 0px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+  }
+
+  .why-choose-div {
+    margin-top: 20px;
+    border-radius: 12px;
+  }
+
+  .mission .row,
+  .mt-5 {
+    margin-top: 0px !important;
+  }
+
+  .text-size {
+    font-size: 32px;
+  }
+
+  .who-we-are p {
+    font-size: 16px;
+  }
+
+  .second-row {
+    width: 100%;
+  }
+
+  .mission-row .text-right {
+    display: flex !important;
+    justify-content: flex-start !important;
+  }
+
+  .text-para {
+    padding-left: 0px;
+    padding-right: 10px;
+    text-align: left;
+  }
+
+  .text-link {
+    text-align: left;
+  }
+
+  .form-box {
+    width: 100%;
+  }
+
+
+  .mobile-display .accordion-button {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    background-color: transparent;
+    border: 1px solid #213c72;
+    padding: 20px;
+
+  }
+
+  .accordion-body {
+    padding-bottom: 15px;
+
+  }
+
+}
+
+/* 767–1024px */
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .info-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+
+  .nav-pills .nav-link {
+    height: 75px;
+    border-radius: 16px;
+  }
+
+  .left .item-text {
+    font-size: 16px !important;
+    text-align: left;
+  }
+
+  .icon-svg {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .icon-wrapper {
+    width: 40px;
+    height: 40px;
+  }
+
+  .arrow-circle {
+    width: 30px;
+    height: 30px;
+  }
+
+  .info-desc {
+    text-align: left;
+
+    font-size: 16px;
+
+  }
+
+
+
+  .info-title {
+
+    text-align: left;
+
+  }
+
+
+
+  .visual-img {
+
+    width: 193px;
+    height: 193px;
+  }
+
+  .lead .text-muted {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,327 @@
+/* ---------------- common card base (no default bg here) ---------------- */
+.card1,
+.card2,
+.card3,
+.card4,
+.card5,
+.card6 {
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px !important;
+  color: white !important;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.45s ease, filter 0.45s ease, box-shadow 0.45s ease;
+}
+
+/* ------------- per-card background images ------------- */
+/* CHANGE THESE PATHS TO MATCH YOUR FOLDER/FILE NAMES */
+.card1 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.14), rgba(0, 0, 0, 0.5)), url('/Asstes/BlogAssets/Design\ Section.jpg');
+}
+
+.card2 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.14), rgba(0, 0, 0, 0.5)), url('Asstes/Trivikra assetes/ux-design.jpg');
+}
+
+.card3 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.14), rgba(0, 0, 0, 0.5)), url('Asstes/Trivikra assetes/uiux-design.jpg');
+}
+
+.card4 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.14), rgba(0, 0, 0, 0.5)), url('Asstes/Trivikra assetes/uiux-development.jpg');
+}
+
+.card5 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.14), rgba(0, 0, 0, 0.5)), url('Asstes/Trivikra assetes/graphic-design.jpg');
+}
+
+.card6 {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.14), rgba(0, 0, 0, 0.5)), url('Asstes/Trivikra assetes/web-development.jpg');
+}
+
+/* ------------- overlay ------------- */
+.card1::before,
+.card2::before,
+.card3::before,
+.card4::before,
+.card5::before,
+.card6::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.7));
+  opacity: 0;
+  transition: opacity 0.45s ease;
+  border-radius: 12px;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* ------------- content placement ------------- */
+.card1 .content,
+.card2 .content,
+.card3 .content,
+.card4 .content,
+.card5 .content,
+.card6 .content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  color: #fff;
+  text-align: left;
+  padding: 1.5rem;
+  width: 100%;
+}
+
+/* ------------- hover ------------- */
+.card1:hover,
+.card2:hover,
+.card3:hover,
+.card4:hover,
+.card5:hover,
+.card6:hover {
+  transform: scale(1.02);
+  filter: brightness(1.12);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+}
+
+.card1:hover::before,
+.card2:hover::before,
+.card3:hover::before,
+.card4:hover::before,
+.card5:hover::before,
+.card6:hover::before {
+  opacity: 1;
+}
+
+/* ------------- blue circle (icon container) ------------- */
+.blue-card {
+  background-color: #ffffff;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.35s ease, background-color 0.35s ease;
+  flex-shrink: 0;
+}
+
+/* image inside circle (you provided icons) */
+.blue-card img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+/* on hover: flip colors */
+.blue-card:hover {
+  background-color: #ffffff;
+  transform: rotate(15deg) scale(1.08);
+}
+
+.blue-card:hover img {
+  filter: invert(0);
+  /* show original colored icon when bg white */
+}
+
+/* ------------- arrow button ------------- */
+.arrow-btn a {
+  background-color: #213C72;
+  color: white;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 35px;
+  height: 35px;
+  transition: transform 0.25s ease, background-color 0.25s ease, color 0.25s ease;
+  text-decoration: none;
+}
+
+.arrow-btn a:hover {
+  background-color: #ffffff;
+  color: #213C72 !important;
+  transform: translateX(6px);
+}
+
+/* ---------------- Filter Buttons (Rounded Pills) ---------------- */
+.filter-btns {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background-color: #ffffff;
+  color: #213C72;
+  border: 2px solid #213C72;
+  padding: 10px 30px;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  min-width: 120px;
+}
+
+/* Active button */
+.filter-btn.active {
+  background-color: #213C72;
+  color: #ffffff;
+  border-color: #213C72;
+}
+
+/* Hover effect */
+.filter-btn:hover {
+  background-color: #213C72;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Optional subtle shadow on hover */
+.filter-btn:active {
+  transform: scale(0.98);
+}
+
+
+.our-blog-image,
+.digital-marketing-image {
+  height: 440px !important;
+  width: 550px !important;
+  object-position: center;
+  border-radius: 10px; /* optional, keep your look */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .filter-btn {
+    padding: 8px 24px;
+    font-size: 0.95rem;
+  }
+}
+
+
+/* ------------- utility ------------- */
+.card-section.d-none {
+  display: none !important;
+  opacity: 0;
+}
+
+/* ------------- responsive tweaks ------------- */
+@media (max-width: 768px) {
+
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5,
+  .card6 {
+    height: 240px !important;
+  }
+
+  .card1 .content,
+  .card2 .content,
+  .card3 .content,
+  .card4 .content,
+  .card5 .content,
+  .card6 .content {
+    padding: 1rem;
+  }
+}
+.Web-Development-Technology-img-div img
+{
+  /* border: 1px solid black; */
+  /* padding: 50px 20px; */
+  height: 420px !important; 
+  width: 100%;
+  }
+
+
+@media screen and (min-width: 767px) and (max-width: 1024px) 
+{
+
+  .text-section {
+    text-align: left;
+}
+
+  .text-section h3 {
+    text-align: left !important;
+}
+
+
+.content  h4{
+   font-size: 16px;
+}
+.form-box {
+    width: 600px !important;
+    margin: auto;
+}
+.mobile-menu2
+{
+  color: #007bff !important;
+
+}
+
+.explore-blog-section h3
+{
+  margin: 0px;
+  margin-top: 16px !important;
+  font-size: 24px;
+
+}
+.explore-blog-section p,.explore-blog-section li
+{
+  font-size: 16px;
+  text-align: left !important;
+
+}
+.article-desc
+{
+  text-align: left !;
+  margin: 0px;
+  margin-bottom: 0px;
+
+}
+
+.pl-2
+{
+  padding-left: 0px !important;
+
+}
+.ml-4
+{
+  margin: 20px !important;
+
+}
+
+
+
+
+
+  }
+
+
+
+/* Keep your existing heights */
+.our-blog-image {
+  height: 440px !important;
+}
+
+.digital-marketing-image {
+  height: 280px !important;
+}
+
+
+
+/* {
+  } */

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trivikra Tech Pvt. Ltd.</title>
+        <meta name="description"
+            content="Trivikra Tech — UI/UX, Web & App Design. We design interfaces, products and responsive solutions that drive measurable business results.">
+
+        <!-- Google Font -->    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+
+        <!-- font family -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+            rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="bootstrap.min.css">
+
+        <!-- Custom CSS -->
+         <link rel="stylesheet" href="Style.css">   <link rel="stylesheet" href="./Css/fixed-icon.css">     
+        <link rel="stylesheet" href="./Css/blog.css">
+    </head>
+</head>
+
+<body>
+   <div class="whats-app-icon-fix">
+    <a href="https://wa.me/918329200778" target="_blank">
+  
+<!-- fixed icon -->
+<div class="button2">
+  <div class="bloom-container">
+    <div class="button-container-main">
+      <div class="button-inner">
+        <div class="back"></div>
+        <div class="front">
+         <img src="./Asstes/Icons/Whatsapp.svg" alt="fixed-icon">
+        
+        </div>
+         
+      </div>
+      <div class="button-glass">
+        <div class="back"></div>
+        <div class="front"></div>
+      </div>
+    </div>
+    
+    <div class="bloom bloom1"></div>
+    <div class="bloom bloom2"></div>
+  </div>
+</div>
+
+
+
+    </a>
+ 
+  </div>
+
+  <!-- HEADER -->
+    <header class="site-header shadow-sm">
+        <div class="container-fuild d-flex align-items-center justify-content-between py-3">
+            <a href="./index.html">
+                <img src="./Asstes/Icons/logo-white.png" alt="Trivikra Tech" class="logo" id="site-logo"
+                    data-logo-default="./Asstes/Icons/logo-white.png" data-logo-scrolled="./Asstes/Icons/logo.png" />
+            </a>
+
+
+            <!-- Desktop Nav -->
+            <nav class="main-nav d-lg-flex align-items-center gap-4">
+                <a href="./index.html" class="nav-link">Home</a>
+                <a href="./service.html" class="nav-link">Services</a>
+                <a href="./training.html" class="nav-link">Training</a>
+                <a href="./blog.html" class="nav-link">Blogs</a>
+                <a href="./about.html" class="nav-link">About</a>
+                <a href="./contact.html" class="nav-link">Contact</a>
+                <a href="#" class="btn ux-audit-btn" data-bs-toggle="modal" data-bs-target="#auditModal">Book Audit</a>
+            </nav>
+
+            <!-- Hamburger -->
+            <button class="btn-hamburger d-lg-none" id="menu-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <a href="./index.html" class="nav-link">Home</a>
+            <a href="./service.html" class="nav-link">Services</a>
+            <a href="./training.html" class="nav-link">Training</a>
+            <a href="./blog.html" class="nav-link">Blogs</a>
+            <a href="./about.html" class="nav-link">About</a>
+            <a href="./contact.html" class="nav-link">Contact</a>
+            <a href="#" class="btn ux-audit-btn" data-bs-toggle="modal" data-bs-target="#auditModal">Book Audit</a>
+        </div>
+    </header>
+
+    <!-- Bootstrap Modal -->
+    <div class="modal fade" id="auditModal" tabindex="-1" aria-labelledby="auditModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-3">
+
+                <div class="modal-header">
+                    <h5 class="modal-title" id="auditModalLabel">Book Your Audit</h5>
+                     <i class="fa-solid fa-xmark" style="color: #213c72; font-size: 24px;" data-bs-dismiss="modal"></i>
+                </div>
+
+                <div class="modal-body">
+                     <form id="mentorForm">
+              <div class="mb-3">
+                <label class="form-label">Enter Name</label>
+                <!-- Added name="name" and kept required -->
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Enter Email</label>
+                <!-- Added name="email" and kept required -->
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Contact No</label>
+                <!-- Added name="phone" -->
+                <input type="text" name="phone" class="form-control" placeholder="+91 1234567890">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Select Service</label>
+                <!-- Added name="service" and kept required -->
+                <select name="service" class="form-select" required>
+                  <option value="">Select Service</option>
+                  <option value="UI/UX Design">UI/UX Design</option>
+                  <option value="Web Development">Web Development</option>
+                  <option value="Mobile App Design">Mobile App Design</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">
+                  Describe Your Work <span class="text-muted small">(Optional)</span>
+                </label>
+                <!-- Added name="message" -->
+                <textarea name="message" class="form-control" rows="4"
+                  placeholder="Describe your project here..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100 h-40">Submit</button>
+            </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- HERO -->
+    <header class="hero-section blog-hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content text-center text-white mt-0">
+            <h1 class="display-5 fw-bold">Insights, Ideas & Innovation in Design and <br> Development
+            </h1>
+            <p class="lead mt-3">Stay ahead with the latest trends in UI/UX Design, Graphic Design, and Web <br>
+                Development. Explore expert articles, tutorials, and career tips from the team at Trivikra <br> Tech —
+                your trusted learning partner for digital success.</p>
+
+                   <div style="
+    display: flex;
+    justify-content: center;" class="pl-3">
+        <div class="mt-4 hero-ctas d-flex justify-centre w-100% ">
+          <a href="#audit" class="btn ux-audit-btn">start reading</a>
+
+        </div>
+      </div>
+
+
+
+        </div>
+    </header>
+
+
+
+    <!-- Explore Our Blog Categories -->
+    <section class="py-5 bg-white">
+        <div class="container my-5">
+            <h2 class="text-center fw-bold mb-2">Explore Our Blog Categories</h2>
+            <p class="text-center text-muted mb-4">Find articles tailored to your interests and career goals — whether
+                you’re a beginner or a professional.</p>
+
+            <div class="row featured-article align-items-center">
+                <!-- Left Text Section -->
+
+                <div class="col-md-6 text-center">
+                    <img src="./Asstes/Trivikra Assetes/Why choose us.jpeg" alt="UI/UX Design"
+                        class="img-fluid rounded">
+                </div>
+
+                <!-- Right Image Section -->
+
+                <div class="col-md-6 text-section">
+
+                    <div class="d-flex">
+                        <img src="./Asstes/services/UI UX.png" alt="UI Icon" style="width: 70px; height: 70px;">
+                        <h3 class="article-title">UI/UX Design Trends 2025</h3>
+
+                    </div>
+
+
+                    <p class="article-desc">
+                        When the digital arena is highly competitive in 2025, companies will not only require a
+                        functional site or application, but they will also require an outstanding design. The trends in
+                        UI/UX design define the interaction between users and digital products, determining whether they
+                        remain or not. Adhering to the recent trends, companies may become more useful, increase their
+                        conversion rates, and establish effective brand relationships.In this blog, the top 5 trends of
+                        UI/UX in design in 2025 that each business must adopt in order to remain relevant and
+                        competitive are discussed.
+                    </p>
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+            <!-- core services............... -->
+
+
+
+
+        </div>
+
+
+        <div class="container">
+
+            <h5>1. Minimalistic and Clean Design</h5>
+            <p>In 2025, minimalistic web design will remain the industry leader based on simplicity, clean layout, and
+                easy navigation.</p>
+            <p><strong>Why it matters:</strong>
+            <ol class="ml-4">
+                <li style="list-style-type: disc;">
+                    Improves page loading speed
+                </li>
+                <li style="list-style-type: disc;">
+                    increases mobile responsiveness
+                </li>
+                <li style="list-style-type: disc;">
+                    directs the focus of the user to important content.
+                </li>
+            </ol>
+
+
+            </p>
+            <p><strong>Hint:</strong> Use space to emphasise key activities and have fewer colours.</p>
+
+            <p><strong>2. Micro-Interactions in UI:</strong> Micro-interactions are tiny animations or user responses
+                that make the interface more useful and satisfying.</p>
+            <p><strong>Benefits include:</strong>
+
+            <ol class="ml-4">
+                <li style="list-style-type: disc;">
+                    Clear feedback on actions
+                </li>
+                <li style="list-style-type: disc;">
+                    makes the experience interesting
+                </li>
+                <li style="list-style-type: disc;">
+                    transfers brand personality
+                </li>
+            </ol>
+            </p>
+            <p><strong>Example:</strong> When a small animation is displayed to prove that a form was successfully
+                submitted, this keeps users updated and entertained.</p>
+
+
+            <p><strong>3. Dark Mode Design:</strong> Dark mode is no longer a choice, but a major trend in the field of
+                UI design, since more and more devices are now able to operate in dark mode system-wide.</p>
+            <p><strong>Why adopt it:</strong>
+            <ol class="ml-4">
+                <li style="list-style-type: disc;">
+                    Reduces eye strain
+                </li>
+                <li style="list-style-type: disc;">
+                    Saves device battery
+                </li>
+                <li style="list-style-type: disc;">
+                    Gives a sleek, modern look
+                </li>
+            </ol>
+            </p>
+            <p><strong>Best Practice:</strong> High contrast is necessary to make things readable.</p>
+
+
+            <p><strong>4. Voice User Interface (VUI):</strong> VUI is becoming popular due to smart assistants and
+                better voice recognition technology.</p>
+            <p><strong>Why implement VUI:</strong>
+            <ol class="ml-4">
+                <li style="list-style-type: disc;">
+                    Allows a hands-free interaction
+                </li>
+                <li style="list-style-type: disc;">
+                    Speeds up common tasks
+                </li>
+                <li style="list-style-type: disc;">
+                    Enhances accessibility
+                </li>
+            </ol>
+            </p>
+            <p><strong>Tip:</strong> Configure a user-friendly flow of conversation that is proactive.</p>
+
+
+            <p><strong>5. Individualised User Response (UX):</strong> Personalised UX personalises content, layouts, and
+                recommendations on the basis of behavioral data.</p>
+            <p><strong>How it works:</strong>
+            <ol class="ml-4">
+                <li style="list-style-type: disc;">
+                    User-based, dynamically driven content blocks
+                </li>
+                <li style="list-style-type: disc;">
+                    Individualised product recommendations
+                </li>
+                <li style="list-style-type: disc;">
+                    Individualised onboarding processes
+                </li>
+            </ol>
+            </p>
+            <p><strong>Statistic:</strong> Custom UX can boost conversions to a maximum of 20%.</p>
+        </div>
+
+
+         <div class="d-flex"><button class="read-button m-auto">subscribe now</button></div>
+
+    </section>
+
+
+     <div class="container my-5">
+
+<h2 class="text-center">read more</h2>
+
+
+                <div id="cards1" class="card-section">
+                    <div class="row g-3">
+
+                        <!-- Card 1 -->
+                        <div class="col-md-4">
+                            <div class="card p-1 card1">
+                                <div class="content">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="blue-card me-2"><img src="./Asstes/services/UI UX.png"
+                                                alt="UI Icon"></div>
+                                        <h4 class="card-title mb-0">UI Design</h4>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="mb-0">Transform ideas into successful products</p>
+                                        <div class="ms-auto arrow-btn"><a href="#"><i class="bi bi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="col-md-4">
+                            <div class="card p-1 card2">
+                                <div class="content">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="blue-card me-2"><img src="icons/ux.png" alt="UX Icon"></div>
+                                        <h4 class="card-title mb-0">UX Design</h4>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="mb-0">Create user-centered digital experiences</p>
+                                        <div class="ms-auto arrow-btn"><a href="#"><i class="bi bi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3 -->
+                        <div class="col-md-4">
+                            <div class="card p-1 card3">
+                                <div class="content">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <div class="blue-card me-2"><img src="icons/uiux.png" alt="UI/UX Icon"></div>
+                                        <h4 class="card-title mb-0">UI/UX Design</h4>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <p class="mb-0">Bridge creativity and usability</p>
+                                        <div class="ms-auto arrow-btn"><a href="#"><i class="bi bi-arrow-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact py-5 bg-white">
+        <div class="container-fluid">
+            <div class="row g-5 align-items-start p-4" style="background-color: rgba(135, 207, 235, 0.656);">
+
+
+                <!-- RIGHT FORM -->
+                <div class="col-md-6 m-auto">
+                    <div class="form-box p-4">
+        <form id="enquiryForm">
+              <div class="mb-3">
+                <label class="form-label">Enter Name</label>
+                <!-- Added name="name" and kept required -->
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Enter Email</label>
+                <!-- Added name="email" and kept required -->
+                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Contact No</label>
+                <!-- Added name="phone" -->
+                <input type="text" name="phone" class="form-control" placeholder="+91 1234567890">
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">Select Service</label>
+                <!-- Added name="service" and kept required -->
+                <select name="service" class="form-select" required>
+                  <option value="">Select Service</option>
+                  <option value="UI/UX Design">UI/UX Design</option>
+                  <option value="Web Development">Web Development</option>
+                  <option value="Mobile App Design">Mobile App Design</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label">
+                  Describe Your Work <span class="text-muted small">(Optional)</span>
+                </label>
+                <!-- Added name="message" -->
+                <textarea name="message" class="form-control" rows="4"
+                  placeholder="Describe your project here..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100 h-40">Submit</button>
+            </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+
+                <!-- Company Info -->
+                <div class="footer-company">
+                    <h3>Trivikra Tech Pvt. Ltd.</h3>
+                    <p>UI/UX Design, SaaS Dashboards, and Enterprise Product Experiences that Drive Growth.</p>
+
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/918329200778" target="_blank" class="whatsapp-link">
+                        <img src="/Asstes/Icons/Frame 180.png" alt="WhatsApp" class="whatsapp-icon"> What's App
+                    </a>
+
+                    <p>Email: <a href="mailto:Info@Trivikratech.com">Info@Trivikratech.com</a></p>
+                    <p>Phone: <a href="tel:+918329200778">+91 8329200778</a></p>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Industries</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Services -->
+                <div class="footer-col">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#">UI/UX Design</a></li>
+                        <li><a href="#">Product Design</a></li>
+                        <li><a href="#">Mobile App Design</a></li>
+                        <li><a href="#">Responsive Web Design</a></li>
+                        <li><a href="#">UX Research & Strategy</a></li>
+                        <li><a href="#">UI/UX Audit</a></li>
+                    </ul>
+                </div>
+
+                <!-- Industries -->
+                <div class="footer-col">
+                    <h4>Industries We Serve</h4>
+                    <ul>
+                        <li><a href="#">SaaS Products</a></li>
+                        <li><a href="#">B2B Solutions</a></li>
+                        <li><a href="#">Enterprise Platforms</a></li>
+                        <li><a href="#">Dashboard Applications</a></li>
+                    </ul>
+                </div>
+
+                <!-- Social Media -->
+                <div class="footer-social">
+                    <h4>Social Media</h4>
+                    <div class="social-icons">
+                        <img src="/Asstes/Icons/linkedin.png" alt="LinkedIn" class="social-icon">
+                        <img src="/Asstes/Icons/x.png" alt="X Twitter" class="social-icon">
+                        <img src="/Asstes/Icons/dribble.png" alt="Dribbble" class="social-icon">
+                        <img src="/Asstes/Icons/behance.png" alt="Behance" class="social-icon">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div class="footer-bottom">
+                <p>
+                    © 2025 <strong>Trivikra Tech Pvt. Ltd.</strong> | Expert in UI/UX design, product design, SaaS
+                    dashboards,
+                    enterprise UX, and responsive web solutions. Delivering faster time-to-market and measurable growth
+                    for
+                    businesses worldwide.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cursor follower -->
+    <div class="cursor"></div>
+    <div class="cursor-view">VIEW</div>
+
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

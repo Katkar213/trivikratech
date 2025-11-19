@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Trivikra Tech — UI/UX, Web & App Design. We design interfaces, products and responsive solutions that drive measurable business results.">
+  <!-- Basic SEO -->
+
+  <link rel="icon" type="image/png" href="./">
+
+
+
+  <title>Trivikra Tech Pvt. Ltd. | UI/UX Design, Web & App Development & Training</title>
+  <meta name="description"
+    content="Trivikra Tech Pvt. Ltd. offers professional UI/UX design, web & app development, and corporate training solutions. We help businesses build intuitive products, improve user experience, and accelerate digital growth.">
+  <meta name="keywords"
+    content="UI UX Design Company, Web Development, App Design, UX Audit, Product Design, SaaS Dashboard Design, Trivikra Tech, Enterprise UX, UI UX Training, Responsive Web Design, User Experience Agency">
+  <meta name="author" content="Trivikra Tech Pvt. Ltd.">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Trivikra Tech Pvt. Ltd. | UI/UX Design & Development Experts">
+  <meta property="og:description"
+    content="We craft user-centered digital products — from UI/UX design and web development to expert training programs. Empower your business with design that delivers results.">
+  <meta property="og:image" content="https://trivikratech.com/Asstes/Icons/logo.png">
+  <meta property="og:url" content="https://trivikratech.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Trivikra Tech Pvt. Ltd.">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Trivikra Tech Pvt. Ltd. | UI/UX Design, Development & Training">
+  <meta name="twitter:description"
+    content="UI/UX, product design, SaaS dashboards, and professional training — designed for measurable business growth.">
+  <meta name="twitter:image" content="https://trivikratech.com/Asstes/Icons/logo.png">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://trivikratech.com/">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/Asstes/Icons/Fivicon.png">
+
+
+
+  <!-- Google Font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="Style.css">
+  <link rel="stylesheet" href="./Css/home.css">
+  <link rel="stylesheet" href="./Css/fixed-icon.css">
+</head>
+
+<body>
+
+
+  <div class="whats-app-icon-fix">
+    <a href="https://wa.me/918329200778" target="_blank">
+  
+
+
+
+
+    </a>
+ 
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header shadow-sm">
+    <div class="container-fuild d-flex align-items-center justify-content-between py-3">
+      <a href="./index.html">
+        <img src="./Asstes/Icons/logo-white.png" alt="Trivikra Tech" class="logo" id="site-logo"
+          data-logo-default="./Asstes/Icons/logo-white.png" data-logo-scrolled="./Asstes/Icons/logo.png" />
+      </a>
+
+
+      <!-- Desktop Nav -->
+      <nav class="main-nav d-lg-flex align-items-center gap-4">
+        <a href="./index.html" class="nav-link">Home</a>
+        <a href="./service.html" class="nav-link">Services</a>
+        <a href="./training.html" class="nav-link">Training</a>
+        <a href="./blog.html" class="nav-link">Blogs</a>
+        <a href="./about.html" class="nav-link">About</a>
+        <a href="./contact.html" class="nav-link">Contact</a>
+        <a href="#" class="btn ux-audit-btn" data-bs-toggle="modal" data-bs-target="#auditModal">Book Audit</a>
+      </nav>
+
+      <!-- Hamburger -->
+      <button class="btn-hamburger d-lg-none" id="menu-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu">
+      <a href="./index.html" class="nav-link">Home</a>
+      <a href="./service.html" class="nav-link">Services</a>
+      <a href="./training.html" class="nav-link">Training</a>
+      <a href="./blog.html" class="nav-link">Blogs</a>
+      <a href="./about.html" class="nav-link">About</a>
+      <a href="./contact.html" class="nav-link">Contact</a>
+      <a href="#" class="btn ux-audit-btn" data-bs-toggle="modal" data-bs-target="#auditModal">Book Audit</a>
+    </div>
+  </header>
+
+
+  <!-- Bootstrap Modal -->
+  <div class="modal fade" id="auditModal" tabindex="-1" aria-labelledby="auditModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content p-3">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="auditModalLabel">Book Your Audit</h5>
+          <i class="fa-solid fa-xmark" style="color: #213c72; font-size: 24px;" data-bs-dismiss="modal"></i>
+        </div>
+
+        <div class="modal-body">
+          <form id="mentorForm">
+            <div class="mb-3">
+              <label class="form-label">Enter Name</label>
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Enter Email</label>
+              <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Contact No</label>
+              <input type="text" name="phone" class="form-control" placeholder="+91 1234567890">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Select Service</label>
+              <select name="service" class="form-select" required>
+                <option value="">Select Service</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Mobile App Design">Mobile App Design</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Describe Your Work <span class="text-muted small">(Optional)</span></label>
+              <textarea name="message" class="form-control" rows="4"
+                placeholder="Describe your project here..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 h-40">Submit</button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <!-- HERO -->
+  <header class="hero-section home-hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content text-center text-white">
+
+      <div class="row">
+        <div class="col-lg-12 m-auto">
+          <h1 class="display-5 fw-bold">End to End UI/UX Design, Development & Professional Training Solutions</h1>
+          <p class="lead mt-3">At Trivikra Tech, we specialize in UI/UX design, web and app development, and
+            professional training programs that empower businesses and individuals alike. Whether you need intuitive
+            digital products or hands-on mentorship to master design skills, our expert team ensures innovation,
+            usability, and measurable growth in every project.</p>
+
+          <div style="
+    display: flex;
+    justify-content: center;">
+            <div class="mt-4 hero-ctas d-flex gap-16 w-100% buttons-vertically">
+              <a href="#audit" class="btn ux-audit-btn" data-bs-toggle="modal" data-bs-target="#auditModal">Get a Free
+                UX Audit</a>
+              <a class="btn btn-light text-White btn-outline-primary explore-case-study-btn" style="font-size: 24px"
+                id="hero-session-btn" href="#case-studies">Explore Case Studies</a>
+
+
+            </div>
+          </div>
+
+
+          <!-- Stats row -->
+          <div class="row stats-row mt-5 justify-content-center text-center gx-0">
+            <div class="col-6 col-md-3 stat">
+              <h3 class="mb-0 stat-number text-white" data-target="200">0+</h3>
+              <p>Projects</p>
+            </div>
+            <div class="col-6 col-md-3 stat">
+              <h3 class="mb-0 stat-number text-white" data-target="50">0+</h3>
+              <p>Clients</p>
+            </div>
+            <div class="col-6 col-md-3 stat">
+              <h3 class="mb-0 stat-number text-white" data-target="5">0+</h3>
+              <p>Years Avg.</p>
+            </div>
+            <div class="col-6 col-md-3 stat">
+              <h3 class="mb-0 stat-number text-white" data-target="98">0%</h3>
+              <p>Satisfaction</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </header>
+
+
+  <!-- SERVICES -->
+  <section class="services-section">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">Our Core UI/UX Services</h2>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-12 col-md-6 col-lg-3 upper-margin">
+          <a class="service-card-link" href="./ui_ux_design_service.html">
+            <div class="home-service-card card-one">
+              <div class="service-card-inner">
+                <h3 class="service-title">Design</h3>
+                <p class="service-sub">Design A Product</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-md-6 col-lg-3 upper-margin">
+          <a class="service-card-link" href="./web-development-service.html">
+            <div class="home-service-card card-two">
+              <div class="service-card-inner">
+                <h3 class="service-title">Development</h3>
+                <p class="service-sub">Build A Website</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-md-6 col-lg-3 upper-margin">
+          <a class="service-card-link" href="./digital-marketing.html">
+            <div class="home-service-card card-three">
+              <div class="service-card-inner">
+                <h3 class="service-title">Marketing</h3>
+                <p class="service-sub">Place A Product</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="col-12 col-md-6 col-lg-3 upper-margin ">
+          <a class="service-card-link" href="./training.html">
+            <div class="home-service-card card-four">
+              <div class="service-card-inner">
+                <h3 class="service-title">Training</h3>
+                <p class="service-sub">Build Your Career</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+
+    </div>
+  </section>
+
+
+  <!-- INDUSTRIES -->
+  <section id="business-context" class="industries">
+    <div class="container">
+      <div class="row">
+
+      </div>
+      <!-- Top Title -->
+      <div class="row justify-content-center text-center mb-4">
+        <div class="col-lg-10">
+          <h1 class="section-title">Tailored UI/UX for Every Business Context</h1>
+          <p class="lead subtitle">Looking for UI/UX design for B2B products or SaaS dashboard design? We help
+            companies streamline workflows and deliver measurable wins.</p>
+        </div>
+      </div>
+
+
+
+      <!-- Main Content with Bootstrap Tabs -->
+      <div class="row align-items-center gx-5 direction-reverse   desktop-display">
+        <!-- Left List as Tab Triggers -->
+        <div class="col-lg-6 col-md-6">
+          <div class="list-vertical nav flex-column nav-pills" id="tabList" role="tablist" aria-orientation="vertical">
+
+            <button class="list-item nav-link active d-flex align-items-center justify-content-between"
+              id="software-tab" data-bs-toggle="pill" data-bs-target="#software" type="button" role="tab"
+              aria-controls="software" aria-selected="true">
+              <div class="left d-flex align-items-center gap-3">
+                <div class="icon-wrapper">
+                  <img src="./Asstes/Home/Software icon.png" alt="Software Design" class="icon-svg">
+                </div>
+                <div class="item-text">Software Design</div>
+              </div>
+              <div class="arrow-circle">
+                <i class="fa-solid fa-angle-right" style="color: white;"></i>
+              </div>
+            </button>
+
+            <!-- 1 -->
+
+            <button class="list-item nav-link d-flex align-items-center justify-content-between" id="webapp-tab"
+              data-bs-toggle="pill" data-bs-target="#webapp" type="button" role="tab" aria-controls="webapp"
+              aria-selected="false">
+              <div class="left d-flex align-items-center gap-3">
+                <div class="icon-wrapper">
+                  <img src="./Asstes/Home/Application.png" alt="Web Application Design" class="icon-svg">
+                </div>
+                <div class="item-text">Web-application Design</div>
+              </div>
+              <div class="arrow-circle"><i class="fa-solid fa-angle-right" style="color: white;"></i></div>
+            </button>
+
+            <!-- 2 -->
+
+            <button class="list-item nav-link d-flex align-items-center justify-content-between" id="dashboard-tab"
+              data-bs-toggle="pill" data-bs-target="#dashboard" type="button" role="tab" aria-controls="dashboard"
+              aria-selected="false">
+              <div class="left d-flex align-items-center gap-3">
+                <div class="icon-wrapper">
+                  <img src="./Asstes/Home/Dashboard.png" alt="Dashboard & Data Visualisation" class="icon-svg">
+                </div>
+                <div class="item-text">Dashboard &amp; Data Visualisation</div>
+              </div>
+              <div class="arrow-circle"><i class="fa-solid fa-angle-right" style="color: white;"></i></div>
+            </button>
+
+            <!-- 3 -->
+
+            <button class="list-item nav-link d-flex align-items-center justify-content-between" id="uiux-tab"
+              data-bs-toggle="pill" data-bs-target="#uiux" type="button" role="tab" aria-controls="uiux"
+              aria-selected="false">
+              <div class="left d-flex align-items-center gap-3">
+                <div class="icon-wrapper">
+                  <img src="./Asstes/Home/UI UX.png" alt="UI UX Design" class="icon-svg">
+                </div>
+                <div class="item-text">UI UX Design</div>
+              </div>
+              <div class="arrow-circle"><i class="fa-solid fa-angle-right" style="color: white;"></i></div>
+            </button>
+
+            <!-- 4 -->
+
+          </div>
+
+
+
+
+
+
+
+        </div>
+
+
+        <!-- Right Side: Tab Content -->
+        <div class="col-lg-6 right-col col-md-6">
+          <div class="tab-content" id="tabContent">
+
+            <!-- Software Design Content -->
+            <div class="tab-pane fade show active" id="software" role="tabpanel" aria-labelledby="software-tab">
+              <div class="d-flex align-items-center gap-4">
+                <div class="visual-wrap">
+                  <img class="visual-img" src="./Asstes/Home/Bigcone.png" alt="Visual Illustration">
+                </div>
+                <div class="info">
+                  <div class="info-title">Design that drives results</div>
+                  <div class="info-desc">
+                    We design scalable software UI for complex systems — with a focus on user needs and team agility.
+                  </div>
+
+
+
+
+
+
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Web Application Design -->
+            <div class="tab-pane fade" id="webapp" role="tabpanel" aria-labelledby="webapp-tab">
+              <div class="d-flex align-items-center gap-4">
+                <div class="visual-wrap">
+                  <img class="visual-img" src="./Asstes/services/BigApplication.png" alt="Visual Illustration">
+                </div>
+                <div class="info">
+                  <div class="info-title">Modern Web Applications</div>
+                  <div class="info-desc">
+                    We craft fast, responsive, and intuitive web applications tailored to your business logic.
+                  </div>
+
+
+
+                </div>
+              </div>
+            </div>
+
+            <!-- Dashboard Design -->
+            <div class="tab-pane fade" id="dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+              <div class="d-flex align-items-center gap-4">
+                <div class="visual-wrap">
+                  <img class="visual-img" src="./Asstes/services/BigDashboard.png" alt="Visual Illustration">
+                </div>
+                <div class="info">
+                  <div class="info-title">Data Visualisation & Dashboards</div>
+                  <div class="info-desc">
+                    Visualize complex data clearly with well-structured dashboards that empower decision-making.
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- UI/UX Design -->
+            <div class="tab-pane fade" id="uiux" role="tabpanel" aria-labelledby="uiux-tab">
+              <div class="d-flex align-items-center gap-4">
+                <div class="visual-wrap">
+                  <img class="visual-img" src="./Asstes/services/BigUI UX.png" alt="Visual Illustration">
+                </div>
+                <div class="info">
+                  <div class="info-title">Human-Centered UI/UX</div>
+                  <div class="info-desc">
+                    We design intuitive user experiences that are aligned with your brand and backed by research.
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div> <!-- End Right Column -->
+
+      </div>
+
+
+
+
+
+      <!-- Mobile View: Accordion Tabs -->
+      <div class="row gx-5  mobile-display">
+        <div class="col-12" id="mobileTabs">
+
+          <!-- Software Design -->
+          <div class="tab-item mb-4">
+            <button class="list-item d-flex align-items-center justify-content-between w-100" data-bs-toggle="collapse"
+              data-bs-target="#mobileSoftware" aria-expanded="false">
+              <div class="left d-flex align-items-center gap-3">
+                <div class="icon-wrapper">
+                  <img src="./Asstes/Home/Software icon.png" alt="Software Design" class="icon-svg">
+                </div>
+                <div class="item-text">Software Design</div>
+              </div>
+              <div class="arrow-circle"><i class="fa-solid fa-angle-right" style="color: white;"></i></div>
+            </button>
+
+            <div id="mobileSoftware" class="collapse" data-bs-parent="#mobileTabs">
+              <div class="tab-pane-content mt-3">
+                <div class="d-flex flex-column align-items-center gap-4">
+                  <div class="visual-wrap">
+                    <img class="visual-img" src="./Asstes/Home/Bigcone.png" alt="Visual Illustration">
+                  </div>
+                  <div class="info text-center">
+                    <div class="info-title">Design that drives results</div>
+                    <div class="info-desc">
+                      We design scalable software UI for complex systems — with a focus on user needs and team agility.
+                    </div>
+                    <div class="mt-4 hero-ctas d-flex justify-content-center gap-3 flex-wrap">
+                      <a href="#audit" class="btn cta-ux-audit-btn" style="width: 100%;">Get a Free UX Audit</a>
+                      <a class="btn btn-outline-primary bg-transparent cta-explore-case-study-btn"
+                        style="width: 100%;  font-size: 20px;" href="#case-studies">Explore Case Studies</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Application Design -->
+          <div class="tab-item mb-4">
+            <button class="list-item d-flex align-items-center justify-content-between w-100" data-bs-toggle="collapse"
+              data-bs-target="#mobileWebapp" aria-expanded="false">
+              <div class="left d-flex align-items-center gap-3">
+                <div class="icon-wrapper">
+                  <img src="./Asstes/Home/Application.png" alt="Web Application Design" class="icon-svg">
+                </div>
+                <div class="item-text">Web-application Design</div>
+              </div>
+              <div class="arrow-circle"><i class="fa-solid fa-angle-right" style="color: white;"></i></div>
+            </button>
+
+            <div id="mobileWebapp" class="collapse" data-bs-parent="#mobileTabs">
+              <div class="tab-pane-content mt-3">
+                <div class="d-flex flex-column align-items-center gap-4">
+                  <div class="visual-wrap">
+                    <img class="visual-img" src="./Asstes/services/BigApplication.png" alt="Visual Illustration">
+                  </div>
+                  <div class="info text-center">
+                    <div class="info-title">Modern Web Applications</div>
+                    <div class="info-desc">
+                      We craft fast, responsive, and intuitive web applications tailored to your business logic.
+                    </div>
+                    <div class="mt-4 hero-ctas d-flex justify-content-center gap-3 flex-wrap">
+                      <a href="#audit" style="width: 100%;" class="btn cta-ux-audit-btn">Get a Free UX Audit</a>
+                      <a class="btn btn-outline-primary bg-transparent cta-explore-case-study-btn"
+                        style="width: 100%;  font-size: 20px;" href="#case-studies">Explore Case Studies</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dashboard Design -->
+          <div class="tab-item mb-4">
+            <button class="list-item d-flex align-items-center justify-content-between w-100" data-bs-toggle="collapse"
+              data-bs-target="#mobileDashboard" aria-expanded="false">
+              <div class="left d-flex align-items-center gap-3">
+                <div class="icon-wrapper">
+                  <img src="./Asstes/Home/Dashboard.png" alt="Dashboard & Data Visualisation" class="icon-svg">
+                </div>
+                <div class="item-text">Dashboard &amp; Data Visualisation</div>
+              </div>
+              <div class="arrow-circle"><i class="fa-solid fa-angle-right" style="color: white;"></i></div>
+            </button>
+
+            <div id="mobileDashboard" class="collapse" data-bs-parent="#mobileTabs">
+              <div class="tab-pane-content mt-3">
+                <div class="d-flex flex-column align-items-center gap-4">
+                  <div class="visual-wrap">
+                    <img class="visual-img" src="./Asstes/services/BigDashboard.png" alt="Visual Illustration">
+                  </div>
+                  <div class="info text-center">
+                    <div class="info-title">Data Visualisation & Dashboards</div>
+                    <div class="info-desc">
+                      Visualize complex data clearly with well-structured dashboards that empower decision-making.
+                    </div>
+                    <div class="mt-4 hero-ctas d-flex justify-content-center gap-3 flex-wrap">
+                      <a href="#audit" class="btn cta-ux-audit-btn" style="width: 100%;">Get a Free UX Audit</a>
+                      <a class="btn btn-outline-primary bg-transparent cta-explore-case-study-btn"
+                        style="width: 100%;  font-size: 20px;" href="#case-studies">Explore Case Studies</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- UI/UX Design -->
+          <div class="tab-item mb-4">
+            <button class="list-item d-flex align-items-center justify-content-between w-100" data-bs-toggle="collapse"
+              data-bs-target="#mobileUiux" aria-expanded="false">
+              <div class="left d-flex align-items-center gap-3">
+                <div class="icon-wrapper">
+                  <img src="./Asstes/Home/UI UX.png" alt="UI UX Design" class="icon-svg">
+                </div>
+                <div class="item-text">UI UX Design</div>
+              </div>
+              <div class="arrow-circle"><i class="fa-solid fa-angle-right" style="color: white;"></i></div>
+            </button>
+
+            <div id="mobileUiux" class="collapse" data-bs-parent="#mobileTabs">
+              <div class="tab-pane-content mt-3">
+                <div class="d-flex flex-column align-items-center gap-4">
+                  <div class="visual-wrap">
+                    <img class="visual-img" src="./Asstes/services/BigUI UX.png" alt="Visual Illustration">
+                  </div>
+                  <div class="info text-center">
+                    <div class="info-title">Human-Centered UI/UX</div>
+                    <div class="info-desc">
+                      We design intuitive user experiences that are aligned with your brand and backed by research.
+                    </div>
+                    <div class="mt-4 hero-ctas d-flex justify-content-center gap-3 flex-wrap">
+                      <a href="#audit" class="btn cta-ux-audit-btn" style="width: 100%; justify-content: center;">Get a
+                        Free UX Audit</a>
+                      <a class="btn btn-outline-primary bg-transparent cta-explore-case-study-btn"
+                        style="width: 100%;  font-size: 20px;" href="#case-studies">Explore Case Studies</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+
+  <!-- WHY CHOOSE US -->
+  <section class="why-choose-us">
+    <div class="container">
+      <h2 class="section-title">Why Choose Us</h2>
+      <h5 class="subtitle mb-4">Business Benefits of Partnering with Us</h5>
+
+      <div class="row align-items-start gx-5">
+        <!-- Left: image + description + CTA -->
+        <div class="col-lg-6 mb-4 col-md-6">
+          <div class="left-block">
+            <!-- update src if you place image in a different folder -->
+            <img src="./Asstes/Trivikra Assetes/Why choose us.jpeg" alt="team collaboration" class="hero-img mb-3">
+
+            <p class="lead-desc">
+              Our UX design approach is built to deliver faster time to market, measurable ROI, and scalable growth. By
+              combining an agile design process with data–driven decisions, we ensure every product launch is efficient
+              and impactful. Streamlined workflows reduce development costs and iteration cycles, while our adaptable
+              design systems grow alongside your product, guaranteeing long–term sustainability and business success.
+            </p>
+
+
+
+
+
+
+
+          </div>
+        </div>
+
+        <!-- Right: four cards -->
+        <div class="col-lg-6 g-3 col-md-6">
+          <div class="row g-3">
+            <div class="col-12 col-md-12">
+              <div class="feature-card p-3 h-100">
+                <h5>Faster Time to Market</h5>
+                <p>With our agile UX design process, products move from concept to launch faster. We cut unnecessary
+                  delays so your business can capture opportunities and reach users ahead of competitors.</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-12">
+              <div class="feature-card p-3 h-100">
+                <h5>Measurable ROI</h5>
+                <p>Every design decision is driven by data and user insights. This ensures your investment in design
+                  translates into measurable returns, from higher engagement to improved conversions.</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-12">
+              <div class="feature-card p-3 h-100">
+                <h5>Efficient UX Design</h5>
+                <p>We streamline workflows and eliminate design inefficiencies. The result is lower development costs,
+                  fewer reworks, and smooth collaboration between design and development teams.</p>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-12">
+              <div class="feature-card p-3 h-100">
+                <h5>Scalable Growth</h5>
+                <p>Our design systems are built to grow with your product. As your business expands, our scalable UX
+                  solutions ensure consistency, flexibility, and long–term sustainability.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+      <div style="display: flex; justify-content: center; width: 100%;">
+        <div class="mt-4 hero-ctas d-flex gap-16 w-100% buttons-vertically" style="flex-direction:row ;">
+          <a href="#audit" class="btn cta-ux-audit-btn" data-bs-toggle="modal" data-bs-target="#auditModal">Get a Free UX Audit</a>
+           <a class="btn btn-outline-primary btn-light text-White btn-outline-primary  bg-transparent cta-explore-case-study-btn"
+                href="https://wa.me/918329200778" target="_blank"
+                style="font-size: 20px;">Get A Call</a>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+
+  <!-- PROCESS -->
+  <section class="process bg-white">
+
+
+
+    <div class="container">
+      <h2 class="text-center section-title">Our Process</h2>
+      <h5 style="color: gray;" class="text-center mb-5 subtitle">Proven UX Design Process for Impactful Results</h5>
+
+
+      <div class="row text-center justify-content-between">
+
+        <!-- Item 1 -->
+        <div class="col-6 col-sm-4 col-md-3 ">
+          <div class="icon-box mb-2 process-icon">
+            <img src="./O Icons/Research.png" alt="Icon 1" class="img-fluid icon-img m-auto ">
+          </div>
+          <h6 class="icon-title process-tital ">Deep Discovery & Brand Understanding</h6>
+          <p>We start by understanding your business, goals, audience, and challenges.
+            This helps us identify what truly matters — and sets a strong strategy before design begins.</p>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="col-6 col-sm-4 col-md-3">
+          <div class="icon-box mb-2">
+            <img src="./O Icons/Wireframing.png" alt="Icon 1" class="img-fluid icon-img m-auto">
+          </div>
+          <h6 class="icon-title process-tital">Direction, Concepts & Visual Strategy</h6>
+          <p>Once we know the brand, we create multiple visual directions, moodboards, and concepts.
+            This step gives you clarity on the design style, colors, and overall visual direction of your project.</p>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="col-6 col-sm-4 col-md-3">
+          <div class="icon-box mb-2">
+            <img src="./O Icons/Interaction.png" alt="Icon 1" class="img-fluid icon-img m-auto">
+          </div>
+          <h6 class="icon-title process-tital">Creative Design Execution & Refinement</h6>
+          <p>We bring the concepts to life with high-quality UI/UX and graphic design.
+            Every screen, section, and visual element is crafted with precision and refined based on your feedback.</p>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="col-6 col-sm-4 col-md-3">
+          <div class="icon-box mb-2">
+            <img src="./O Icons/Usability.png" alt="Icon 1" class="img-fluid icon-img m-auto">
+          </div>
+          <h6 class="icon-title process-tital">Final Delivery, Optimization & Support</h6>
+          <p>You receive fully optimized, ready-to-use design files for web, print, or digital platforms.
+            We ensure everything is clean, export-ready, and perfectly organized — with support whenever needed.</p>
+        </div>
+
+        <!-- Item 5 -->
+        <!-- <div class="col-6 col-sm-4 col-md-2">
+          <div class="icon-box mb-4 mt-3">
+            <img src="./O Icons/Analytics.png" alt="Icon 1" style="height:110px;" class="img-fluid icon-img m-auto">
+          </div>
+          <h6 class="icon-title">Usability Testing</h6>
+            <p>We begin with learning about your business, audience, and brand vision.</p>
+        </div> -->
+
+      </div>
+
+
+    </div>
+
+
+
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section class="services-section " id="case-studies">
+    <div class="container text-center">
+      <h2 class="section-title text-center mb-4">Our Case Studies</h2>
+      <p style="font-size: 24px;" class="subtitle">See How We Delivered Success</p>
+
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-12 col-md-6 col-lg-4 case-study-card3">
+          <a class="service-card-link" href="#">
+            <div class="home-service-card card-one">
+              <div class="service-card-inner">
+                <h3 class="service-title">Design</h3>
+                <p class="service-sub">UI/UX Design</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-12 col-md-6 col-lg-4 case-study-card3">
+          <a class="service-card-link" href="#">
+            <div class="home-service-card card-two">
+              <div class="service-card-inner">
+                <h3 class="service-title">Product</h3>
+                <p class="service-sub">Product Design</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-12 col-md-12 m-auto case-study-card3 col-lg-4">
+          <a class="service-card-link" href="#">
+            <div class="home-service-card card-three">
+              <div class="service-card-inner">
+                <h3 class="service-title">Marketing</h3>
+                <p class="service-sub">UX-driven Growth</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- CTA Buttons -->
+      <p class="mt-5 visual-problem-heading" style="font-size: 24px;">Visual,Problem Solution Outcome Format</p>
+      <div style="display: flex; justify-content: center; width: 100%;">
+        <div class="mt-4 hero-ctas d-flex gap-16 w-100% buttons-vertically" style="flex-direction:row ;">
+
+          <a class="btn btn-outline-primary btn-light text-White btn-outline-primary  bg-transparent cta-explore-case-study-btn"
+            style="font-size: 20px;" href="#case-studies">Explore Case Study</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact bg-white">
+    <div class="container">
+      <div class="row g-5 align-items-start direction-reverse">
+
+        <!-- left form -->
+
+        <!-- left -->
+        <div class="col-md-6">
+          <h2 class="fw-bold mb-3">Design Clean, Usable Interfaces</h2>
+
+          <p class="lead text-muted">
+            UI/UX end-to-end—principles, components, prototyping, testing, and handoff—through
+            hands-on projects.
+          </p>
+
+          <!-- Bulleted list (use Bootstrap spacing) -->
+          <ul class="ps-3 mb-4 pl-3">
+            <li class="mb-2">Live classes + recordings</li>
+            <li class="mb-2">Mini design system (tokens &amp; components)</li>
+            <li class="mb-2">Dashboard + mobile app projects</li>
+            <li class="mb-2">Resume, LinkedIn &amp; interview prep</li>
+            <li class="mb-2">Result: A clean, professional portfolio in just 4 weeks.</li>
+          </ul>
+
+          <!-- Small stats row (uses only Bootstrap classes) -->
+          <div class="tab-hide">
+            <div class="d-flex align-items-center gap-3 mb-3 row">
+
+              <div class="border rounded-3 text-center p-3 form-boxes col-lg-3 col-md-6" style="min-width:100px;">
+                <div class=" mb-0 fw-bold text-dark">4.8/5</div>
+                <small class="text-muted">Rated by learners</small>
+              </div>
+
+              <div class="border rounded-3 text-center p-3 form-boxes col-lg-3 col-md-5" style="min-width:100px;">
+                <div class="mb-0 fw-bold text-dark">+200</div>
+                <small class="text-muted">learners trained</small>
+              </div>
+
+              <div class="border rounded-3 text-center p-3 form-boxes col-lg-4 col-md-12" style="min-width:120px;">
+                <div class="small mb-0 fw-bold text-dark">Partner referrals</div>
+                <small class="text-muted">available</small>
+              </div>
+            </div>
+
+          </div>
+
+
+          <!-- Contact row with WhatsApp link + email/phone lines -->
+          <div class="mb-3">
+
+
+
+
+            <p class="mb-1">Email:
+              <a href="mailto:Info@Trivikratech.com" class="text-dark">Info@Trivikratech.com</a>
+            </p>
+            <p class="mb-3">Phone:
+              <a href="tel:+918329200778" class="text-dark">+91 8329200778</a>
+            </p>
+          </div>
+
+          <!-- Buttons (kept EXACTLY as your original markup) -->
+          <!-- Buttons -->
+          <div style="display: flex; justify-content: start;">
+            <div class="mt-4 hero-ctas d-flex gap-16 w-100% "
+              style="flex-direction:row ;">
+              <!-- <a href="#contact" class="btn cta-ux-audit-btn">Get a Free UX Audit</a> -->
+
+              <!-- whats app iucon -->
+              <a href="https://wa.me/918329200778" target="_blank" class="cta-explore-case-study-btn"
+                style="font-size: 20px;" href="#case-studies">
+
+                <button class="Btn">
+                  <div class="sign">
+                    <i class="fa-brands fa-whatsapp" style="color: white; font-size: 24px;"></i>
+                  </div>
+
+                  <div class="text">Whatsapp</div>
+
+
+
+
+
+                </button>
+
+
+
+              </a>
+
+              <!-- student works -->
+
+              <a href="https://wa.me/918329200778" target="_blank" class="cta-explore-case-study-btn"
+                style="font-size: 20px;" href="#case-studies">
+
+                <button class="Btn2">
+                  <div class="sign2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+                      <path fill="currentColor"
+                        d="m225.27 60.21l-96-32a4 4 0 0 0-2.54 0l-96 32A4 4 0 0 0 28 64v80a4 4 0 0 0 8 0V69.55l43.88 14.63a60 60 0 0 0 24.54 91c-20.86 5.74-39 19.13-51.77 38.65a4 4 0 0 0 6.7 4.36C75.17 193.92 100.2 180 128 180s52.83 13.92 68.65 38.18a4 4 0 0 0 6.7-4.36c-12.72-19.52-30.91-32.91-51.77-38.65a60 60 0 0 0 24.54-91l49.15-16.39a4 4 0 0 0 0-7.58ZM180 120a52 52 0 1 1-92.07-33.14l38.8 12.93a3.95 3.95 0 0 0 2.54 0l38.8-12.93A51.85 51.85 0 0 1 180 120m-52-28.22L44.65 64L128 36.22L211.35 64Z" />
+                    </svg>
+                  </div>
+
+                  <div class="text2">our student works</div>
+
+
+
+
+
+                </button>
+
+
+
+              </a>
+
+            </div>
+          </div>
+
+
+        </div>
+
+        <!-- RIGHT FORM -->
+        <div class="col-md-6">
+          <div class="form-box px-3 py-3">
+            <h4 class="form-title">Drop Your Requirements</h4>
+
+            <!-- Added id="mentorForm" so JS can target this form -->
+           <form id="enquiryForm">
+            <div class="mb-3">
+              <label class="form-label">Enter Name</label>
+              <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Enter Email</label>
+              <input type="email" name="email" class="form-control" placeholder="Your Email" required>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Contact No</label>
+              <input type="text" name="phone" class="form-control" placeholder="+91 1234567890">
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Select Service</label>
+              <select name="service" class="form-select" required>
+                <option value="">Select Service</option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Mobile App Design">Mobile App Design</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Describe Your Work <span class="text-muted small">(Optional)</span></label>
+              <textarea name="message" class="form-control" rows="4"
+                placeholder="Describe your project here..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 h-40">Submit</button>
+          </form>
+          </div>
+        </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Company Info -->
+        <div class="footer-company">
+          <h3>Trivikra Tech Pvt. Ltd.</h3>
+          <p>UI/UX Design, SaaS Dashboards, and Enterprise Product Experiences that Drive Growth.</p>
+
+          <!-- WhatsApp -->
+          <a href="https://wa.me/918329200778" target="_blank" class="whatsapp-link">
+            <img src="/Asstes/Icons/Frame 180.png" alt="WhatsApp" class="whatsapp-icon"> What's App
+          </a>
+
+          <p>Email: <a href="mailto:Info@Trivikratech.com">Info@Trivikratech.com</a></p>
+          <p>Phone: <a href="tel:+918329200778">+91 8329200778</a></p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Industries</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+
+        <!-- Our Services -->
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">UI/UX Design</a></li>
+            <li><a href="#">Product Design</a></li>
+            <li><a href="#">Mobile App Design</a></li>
+            <li><a href="#">Responsive Web Design</a></li>
+            <li><a href="#">UX Research & Strategy</a></li>
+            <li><a href="#">UI/UX Audit</a></li>
+          </ul>
+        </div>
+
+        <!-- Industries -->
+        <div class="footer-col">
+          <h4>Industries We Serve</h4>
+          <ul>
+            <li><a href="#">SaaS Products</a></li>
+            <li><a href="#">B2B Solutions</a></li>
+            <li><a href="#">Enterprise Platforms</a></li>
+            <li><a href="#">Dashboard Applications</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media -->
+        <div class="footer-social">
+          <h4>Social Media</h4>
+          <div class="social-icons">
+            <img src="/Asstes/Icons/linkedin.png" alt="LinkedIn" class="social-icon">
+            <img src="/Asstes/icons/x.png" alt="X Twitter" class="social-icon">
+            <img src="/Asstes/icons/dribble.png" alt="Dribbble" class="social-icon">
+            <img src="/Asstes/icons/behance.png" alt="Behance" class="social-icon">
+          </div>
+        </div>
+      </div>
+
+      <!-- Bottom -->
+      <div class="footer-bottom">
+        <p>
+          © 2025 <strong>Trivikra Tech Pvt. Ltd.</strong> | Expert in UI/UX design, product design, SaaS dashboards,
+          enterprise UX, and responsive web solutions. Delivering faster time-to-market and measurable growth for
+          businesses worldwide.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cursor follower -->
+  <div class="cursor"></div>
+  <div class="cursor-view">VIEW</div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,386 @@
+:root {
+    --muted: #8b8f94;
+    --accent: #1f3b7a;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, Roboto, 'Helvetica Neue', Arial, sans-serif;
+    color: #071029;
+    margin: 0;
+}
+
+/* Titles */
+.main-title {
+    font-weight: 800;
+    font-size: 36px;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.subtitle {
+    color: var(--muted);
+    font-size: 20px;
+    /* margin-bottom: 30px; */
+}
+
+/* List section */
+.list-vertical {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.list-item .d-flex {
+    gap: 8px !important;
+}
+
+.list-item {
+    gap: 0px;
+    background: #fff;
+    border: none;
+    /* border removed */
+    border-radius: 8px;
+    padding: 20px 22px;
+
+    /* new soft shadow */
+    box-shadow:
+        0 2px 6px rgba(15, 23, 42, 0.05),
+        0 8px 20px rgba(0, 0, 0, 0.08);
+
+    /* smooth hover transition */
+    transition: all 0.3s ease;
+}
+
+.list-item:hover {
+    /* hover shadow — slightly stronger */
+    box-shadow:
+        0 4px 12px rgba(15, 23, 42, 0.1),
+        0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+    /* slight lift */
+}
+
+.left .item-text {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+/* Icon wrapper */
+.icon-wrapper {
+    width: 56px;
+    height: 56px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9fbff;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+.icon-svg {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Arrow button */
+.arrow-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #173a7a6c;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    box-shadow: 0 6px 18px rgba(23, 58, 122, 0.12);
+}
+
+/* Visual image area */
+.visual-wrap {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.visual-img {
+    width: 310px;
+    height: 310px;
+    transform: none;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.15));
+    border-radius: 12px;
+}
+
+/* Info text */
+.info {
+    text-align: center;
+}
+
+.info-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.info-desc {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--muted);
+    line-height: 1.6;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+/* === Button Custom Size === */
+.btn-primary-custom,
+.btn-outline-primary {
+    /* width: 160px;
+    height: 40px; */
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 8px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+/* Primary button */
+.btn-primary-custom {
+    background: var(--accent);
+
+    border: none;
+}
+
+.btn-primary-custom:hover {
+    color: black;
+    transform: translateY(-2px);
+}
+
+/* Outline button */
+.btn-outline-primary {
+    /* border: 2px solid var(--accent); */
+    color: var(--accent);
+    background: transparent;
+}
+
+.btn-outline-primary:hover {
+
+    color: black;
+    transform: translateY(-2px);
+}
+
+
+/* ONLY affect the RIGHT column layout now */
+.right-col .d-flex {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+/* Keep your custom styles when tab is active */
+.nav-pills .nav-link.active {
+    border-radius: 16px;
+    background: #fff;
+    box-shadow:
+        0 4px 12px rgba(15, 23, 42, 0.1),
+        0 12px 24px rgba(0, 0, 0, 0.15);
+    transform: translateY(-4px);
+    color: inherit;
+    border: 1px solid transparent !important;
+
+    background: #213c72 !important;
+
+    color: white !important;
+
+}
+
+button {
+    color: black;
+}
+
+.list-item:hover {
+    background-color: white !important;
+}
+
+.list-item {
+    border: none !important;
+
+}
+
+.nav-pills .nav-link {
+    border-radius: 16px;
+}
+
+
+
+
+/* Responsive */
+@media (max-width:991px) {
+    .visual-wrap {
+        height: auto;
+    }
+
+    .visual-img {
+        max-height: 260px;
+    }
+
+    .main-title {
+        font-size: 28px;
+    }
+
+    .list-item {
+        padding: 16px;
+    }
+}
+
+@media screen and (min-width: 358px) and (max-width: 576px) {
+
+    /* .hero-ctas a{
+      width: 60%;
+      margin: auto ;
+    } */
+    .mobile-display .info-desc{
+    text-align: left;
+    line-height: normal;
+    font-size: 16px;
+    font-weight: 200 !important;
+}
+
+
+.mobile-display .info-title {
+    text-align: left;
+    line-height: normal;
+    font-size: 24px;
+}
+
+.mobile-display a {
+
+    justify-content: center;
+}
+
+
+.main-title {
+    font-size: 22px;
+}
+
+.arrow-circle {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-wrapper,
+.icon-svg {
+    width: 50px;
+    height: 50px;
+}
+
+.info-desc {
+    font-size: 15px;
+}
+
+
+.nav-pills .nav-link.active {
+    height: 54px;
+    padding: 14px 16px;
+}
+
+.nav-pills .nav-link {
+
+    height: 54px;
+    padding: 14px 16px;
+}
+
+.left .item-text {
+    font-size: 16px;
+    text-align: left;
+}
+
+.last-process {
+    margin: auto;
+}
+
+
+
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+
+    .info-title {
+        font-size: 22px;
+        font-weight: 600;
+        margin-bottom: 6px;
+    }
+
+
+    .nav-pills .nav-link {
+        height: 75px;
+        border-radius: 16px;
+
+    }
+
+    .left .item-text {
+        font-size: 16px !important;
+        text-align: left;
+
+
+    }
+
+    .icon-svg {
+        width: 40px !important;
+        height: 40px !important;
+
+    }
+
+    .icon-wrapper {
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .arrow-circle {
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .info-desc {
+        text-align: left;
+        font-size: 16px;
+    }
+
+
+
+    .lead text-muted {
+        font-size: 16px;
+    }
+
+
+    .info-title {
+        text-align: left;
+    }
+
+    .visual-img {
+        width: 193px;
+        height: 193px;
+
+    }
+
+}
+
+/* {
+    } */
