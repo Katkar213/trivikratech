@@ -1712,6 +1712,15 @@ a {
 
 @media screen and (min-width: 358px) and (max-width: 766px) {
 
+
+.form-boxes {
+    border-radius: 12px;
+    height: 80px;
+    width: 300px;
+    margin: auto;
+}
+
+
   .whats-app-icon-fix
 {
   position: fixed;

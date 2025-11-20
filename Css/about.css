@@ -402,6 +402,16 @@ img {
 /* ---------- Responsive: 358–576 ---------- */
 @media screen and (min-width: 358px) and (max-width: 576px) {
 
+  .our-impact-number p {
+    text-align: left !important;
+}
+
+.our-impact-number-div {
+    width: 90%;
+    margin:auto;
+    height: 160px !important;
+}
+
   .page-head h1 {
     font-size: 2rem;
   }

@@ -1,0 +1,30 @@
+
+
+@media screen and (min-width: 358px) and (max-width: 576px) {
+
+
+
+.hero-section .container div {
+    /* justify-content: left !important; */
+    /* width: 100%; */
+   
+    justify-content: center;
+}
+
+.hero-section .container div {
+    justify-content:center !important;
+    /* width: 100%; */
+}
+.w-50
+ {
+   
+    width: 80% !important;
+}
+.stats-row 
+{
+   
+    width: 320px !important;
+}
+
+
+}
